@@ -1,16 +1,52 @@
 import Link from "next/link";
 import React from "react";
 import { GoArrowRight } from "react-icons/go";
+import { motion, useAnimation } from "framer-motion";
+import { useEffect, useState } from "react";
 
 const Wwd = () => {
+  const [isVisible, setIsVisible] = useState(false);
+  const controls = useAnimation();
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY + window.innerHeight;
+      const elementPosition =
+        document.getElementById("wwdContainer").offsetTop + 300;
+      if (scrollPosition > elementPosition) {
+        setIsVisible(true);
+        controls.start({
+          opacity: 1,
+          y: 0,
+          transition: { duration: 0.5 },
+        });
+      } else {
+        setIsVisible(false);
+        controls.start({
+          opacity: 0,
+          y: 50,
+          transition: { duration: 0.5 },
+        });
+      }
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [controls]);
   return (
-    <section className="wwd bg6 ptb48">
+    <section className="wwd bg6 ptb48 w100 ofh" id="wwdContainer">
       <div className="wwd-intro wrapper2 ptb48">
         <div className="wwd-heading-box h-center mb24">
           <div className="wwd-heading-section tac w75">
-            <h4 className="wwd-subheading ttu bg1 dib fc1 fs14 fw5 br4 plr16 ptb8 mb24">
+            <motion.h4
+              className="wwd-subheading ttu bg1 dib fc1 fs14 fw5 br4 plr16 ptb8 mb24"
+              initial={{ opacity: 0, y: -100 }}
+              animate={isVisible ? { opacity: 1, y: 0 } : {}}
+              transition={{ duration: 0.7 }}
+            >
               What we do
-            </h4>
+            </motion.h4>
             <h2 className="wwd-heading fs42 lh48 fc6 fw7 mb24">
               Fostering Change: Our Comprehensive Philanthropic Work in Greater
               Houston{" "}
@@ -23,7 +59,12 @@ const Wwd = () => {
           </div>
         </div>
         <div className="wwd-card-container df jcsb ptb24">
-          <div className="wwd-cards flx25 mb24 df">
+          <motion.div
+            className="wwd-cards flx25 mb24 df"
+            initial={{ opacity: 0, x: -450 }}
+            animate={isVisible ? { opacity: 1, x: 0 } : {}}
+            transition={{ duration: 1.4 }}
+          >
             <div className="wwd-card w100 transit2 pr fc1 df jcc mr24 aft pr ofh w100">
               <img
                 src="images/scholarship-program-img.jpg"
@@ -47,8 +88,13 @@ const Wwd = () => {
                 <GoArrowRight className="material-symbols-outlined ml8" />
               </Link>
             </div>
-          </div>
-          <div className="wwd-cards flx25 mb24 df">
+          </motion.div>
+          <motion.div
+            className="wwd-cards flx25 mb24 df"
+            initial={{ opacity: 0, x: -300 }}
+            animate={isVisible ? { opacity: 1, x: 0 } : {}}
+            transition={{ duration: 1 }}
+          >
             <div className="wwd-card w100 transit2 pr fc1 df jcc mr24 aft pr ofh">
               <img
                 src="images/waca-img.jpg"
@@ -72,8 +118,13 @@ const Wwd = () => {
                 <GoArrowRight className="material-symbols-outlined ml8" />
               </Link>
             </div>
-          </div>
-          <div className="wwd-cards flx25 mb24 df">
+          </motion.div>
+          <motion.div
+            className="wwd-cards flx25 mb24 df"
+            initial={{ opacity: 0, x: 300 }}
+            animate={isVisible ? { opacity: 1, x: 0 } : {}}
+            transition={{ duration: 1 }}
+          >
             <div className="wwd-card w100 transit2 pr fc1 df jcc mr24 aft pr ofh">
               <img
                 src="images/stemsa-img.jpg"
@@ -97,8 +148,13 @@ const Wwd = () => {
                 <GoArrowRight className="material-symbols-outlined ml8" />
               </Link>
             </div>
-          </div>
-          <div className="wwd-cards flx25 mb24 df">
+          </motion.div>
+          <motion.div
+            className="wwd-cards flx25 mb24 df"
+            initial={{ opacity: 0, x: 450 }}
+            animate={isVisible ? { opacity: 1, x: 0 } : {}}
+            transition={{ duration: 1.4 }}
+          >
             <div className="wwd-card w100 transit2 pr fc1 df jcc mr24 aft pr ofh">
               <img
                 src="images/hsce-img.jpg"
@@ -122,7 +178,7 @@ const Wwd = () => {
                 <GoArrowRight className="material-symbols-outlined ml8" />
               </Link>
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>
