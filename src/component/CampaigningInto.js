@@ -86,7 +86,7 @@ const CampaigningInto = () => {
             Transforming lives in Greater Houston through{" "}
             <span className="fw7 fs18 ff2 fc2">EFGH -</span> education, family,
             general wellfare, and healthcare.{" "}
-            <Link href="/" className="ff2 fw7 fc2 tdhu:hover">
+            <Link href="/" className="ff2 fw7 fc2 tdhu">
               Join us in making a difference
             </Link>
             .

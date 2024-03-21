@@ -48,7 +48,7 @@ const Calender = () => {
         >
           {calendarData.map((event, index) => (
             <div className="calender-card" key={index}>
-              <div className="calender-cards transit2 mr24 mb24 br8 ofh bg2 plr24 ptb32">
+              <div className="calender-cards transit2 mlr16 br8 ofh bg2 plr24 ptb32">
                 <img
                   src={event.icon}
                   alt="Event Icon"
