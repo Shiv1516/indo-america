@@ -12,7 +12,7 @@ const CampaigningInto = () => {
     const handleScroll = () => {
       const scrollPosition = window.scrollY + window.innerHeight;
       const elementPosition =
-        document.getElementById("scrollContainer").offsetTop;
+        document.getElementById("scrollContainer").offsetTop + 300;
       if (scrollPosition > elementPosition) {
         setIsVisible(true);
         controls.start({
