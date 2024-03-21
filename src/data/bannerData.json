@@ -1,0 +1,26 @@
+[
+  {
+    "image": "houston-communities-hero-img.jpg",
+    "title": "Elevating Lives, Enriching Communities:",
+    "subtitle": "Our Commitment to Greater Houston Communities",
+    "description": "Empowering Greater Houston Communities through education, family support, welfare, and healthcare since 1988.",
+    "buttonText": "Learn More",
+    "buttonLink": "/"
+  },
+  {
+    "image": "scholarship-hero-img.jpg",
+    "title": "Transforming Lives, Enriching Futures: ",
+    "subtitle": "Scholarships Empowering Tomorrow's Leaders.",
+    "description": "Empowering future leaders of greater Huston ISDs with $50k in scholarships.",
+    "buttonText": "Learn More",
+    "buttonLink": "/"
+  },
+  {
+    "image": "support-hero-img.jpg",
+    "title": "Empowering Initiatives:",
+    "subtitle": "Grants for Emerging NGOs Fueling Change.",
+    "description": "Fostering progress through grants to small and startup NGOs, igniting community-driven impact.",
+    "buttonText": "Learn More",
+    "buttonLink": "/"
+  }
+]
