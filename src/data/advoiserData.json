@@ -1,58 +1,58 @@
 [
   {
     "id": 1,
-    "name": "Sushant Tiwari",
-    "role": "President",
+    "name": "Ramesh Cherivirala",
+    "role": "Advisor",
     "image": "/images/campaigning-img-02.jpg",
     "alt": "campaigning-img-02"
   },
   {
     "id": 2,
-    "name": "Hasu D Patel",
-    "role": "President-Elect",
+    "name": "Prem Cholia",
+    "role": "Advisor",
     "image": "/images/campaigning-img-02.jpg",
-    "alt": "vice-president-img"
+    "alt": "campaigning-img-02"
   },
   {
     "id": 3,
-    "name": "Rosh Rajan",
-    "role": "Secretary",
+    "name": "Kamala Raghavan",
+    "role": "Advisor",
     "image": "/images/campaigning-img-02.jpg",
-    "alt": "secretary-img"
+    "alt": "campaigning-img-02"
   },
   {
     "id": 4,
-    "name": "Dr Prasun Jallal",
-    "role": "Treasurer",
+    "name": "Nanda Vura",
+    "role": "Advisor",
     "image": "/images/campaigning-img-02.jpg",
-    "alt": "treasurer-img"
+    "alt": "campaigning-img-02"
   },
   {
     "id": 5,
-    "name": "Venkat Bontha",
-    "role": "Communications Directorr",
+    "name": "Mahesh Wadhwa",
+    "role": "Advisor",
     "image": "/images/campaigning-img-02.jpg",
-    "alt": "treasurer-img"
+    "alt": "campaigning-img-02"
   },
   {
     "id": 6,
-    "name": "Rajesh Dikonda",
-    "role": "Past President",
+    "name": "Venkat Iyer",
+    "role": "Advisor",
     "image": "/images/campaigning-img-02.jpg",
-    "alt": "treasurer-img"
+    "alt": "campaigning-img-02"
   },
   {
     "id": 7,
-    "name": "Shobana Muratee",
-    "role": "Director",
+    "name": "Dr Sushovan Guha",
+    "role": "Advisor",
     "image": "/images/campaigning-img-02.jpg",
-    "alt": "treasurer-img"
+    "alt": "campaigning-img-02"
   },
   {
     "id": 8,
-    "name": "Shephali Kadia",
-    "role": "Director",
+    "name": "Ellankil Joseph",
+    "role": "Advisor",
     "image": "/images/campaigning-img-02.jpg",
-    "alt": "treasurer-img"
+    "alt": "campaigning-img-02"
   }
 ]
