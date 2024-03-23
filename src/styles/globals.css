@@ -1991,7 +1991,8 @@ table {
   .office-address,
   .office-timing,
   .provider-box,
-  .provider-img {
+  .provider-img,
+  .provider-content {
     flex: 0 0 100%;
     max-width: 100%;
   }
