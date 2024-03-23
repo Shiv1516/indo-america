@@ -1295,13 +1295,13 @@ table {
 }
 .first-circlebox {
   position: absolute;
-  top: 33%;
-  left: 12%;
+  top: 22%;
+  left: 16%;
 }
 .second-circlebox {
   position: absolute;
-  top: 60%;
-  left: 3.5%;
+  bottom: 20%;
+  left: 0%;
 }
 .third-circlebox {
   position: absolute;
@@ -1310,18 +1310,18 @@ table {
 }
 .fourth-circlebox {
   position: absolute;
-  top: 38%;
-  left: 9%;
+  top: 25%;
+  left: 13%;
 }
 .fifth-circlebox {
   position: absolute;
-  top: 8%;
-  left: 28%;
+  top: 0%;
+  left: 50%;
 }
 .sixth-circlebox {
   position: absolute;
-  top: 12%;
-  left: 22%;
+  top: 15%;
+  left: 16%;
 }
 .seventh-circlebox {
   position: absolute;
@@ -1665,6 +1665,10 @@ table {
   .circle-text-content {
     display: none;
   }
+  .support-card {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
 }
 @media only screen and (max-width: 850px) {
   .fs52,
@@ -1700,7 +1704,8 @@ table {
   .wwd-cards,
   .card,
   .count-card,
-  .wwa-count-card {
+  .wwa-count-card,
+  .member-cards {
     flex: 0 0 50%;
     max-width: 50%;
   }
@@ -1711,12 +1716,16 @@ table {
   .who-we-are-container,
   .who-we-are-img-box,
   .our-goal-main-content,
+  .our-goal-img,
   .our-mission-section,
   .our-mission-img,
   .wwa-content,
   .wwa-img-box,
   .contact-section,
-  .contact-maps {
+  .contact-maps,
+  .events-content,
+  .events-img,
+  .provider {
     flex: 0 0 100%;
     max-width: 100%;
   }
@@ -1782,8 +1791,14 @@ table {
   .happening-section,
   .movement-section,
   .contact-section,
-  .contact-content {
+  .contact-content,
+  .who-we-are-img-box,
+  .wwa-img-box,
+  .our-goal-img img {
     padding: 16px 0 16px 0;
+  }
+  .who-we-are-content {
+    padding: 12px;
   }
 }
 @media only screen and (max-width: 768px) {
@@ -1830,7 +1845,9 @@ table {
   .contact-form,
   .contect-img-box,
   .wwa-support-card-img,
-  .wwa-support-card-content {
+  .wwa-support-card-content,
+  .gallery-img,
+  .support-card {
     flex: 0 0 100%;
     max-width: 100%;
   }
@@ -1863,9 +1880,6 @@ table {
     width: 100%;
     padding: 12px;
   }
-  .contect-img {
-    padding: 0px;
-  }
   .contact-us-subtext,
   .who-we-are-subtext,
   .wwa-subtext,
@@ -1884,6 +1898,17 @@ table {
   .donors-card,
   .happening-cards {
     margin-right: 0;
+  }
+  .contact-us-img-box,
+  .contact-img img {
+    padding: 12px 0 12px 0;
+    border-radius: 8px;
+  }
+  .support-card {
+    display: block;
+  }
+  .support-cards {
+    margin-right: 0px;
   }
 }
 @media only screen and (max-width: 540px) {
@@ -1919,12 +1944,23 @@ table {
   .wwa-subtext {
     font-size: 14px;
   }
-  .wwd-cards {
+  .wwd-cards,
+  .contact-firstname,
+  .contact-lastname,
+  .contact-mailing-message,
+  .contact-email,
+  .contact-phone,
+  .contact-subject,
+  .ticket-card,
+  .member-cards {
     flex: 0 0 100%;
     max-width: 100%;
   }
   .wwd-card {
     margin-right: 0;
+  }
+  .ticket-card {
+    display: block;
   }
 }
 @media only screen and (max-width: 450px) {
@@ -1934,7 +1970,9 @@ table {
   .progress-content,
   .wwa-count-card,
   .office-address,
-  .office-timing {
+  .office-timing,
+  .provider-box,
+  .provider-img {
     flex: 0 0 100%;
     max-width: 100%;
   }
@@ -1949,6 +1987,9 @@ table {
   }
   .wwd-cards {
     height: 250px;
+  }
+  .wwa-join-us {
+    padding-top: 250px;
   }
 }
 .blink,

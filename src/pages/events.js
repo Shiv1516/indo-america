@@ -105,14 +105,14 @@ const events = () => {
               </p>
             </div>
           </div>
-          <div className="message-providers df ptb24">
-            <div className="provider flx50">
+          <div className="message-providers df fww ptb24">
+            <div className="provider flx50 mb24">
               <div className="provider-box mr24 df ofh br8 bg12">
-                <div className="provider-img flx50">
+                <div className="provider-img flx50 df">
                   <img
                     src="images/team-member-01.jpg"
                     alt=""
-                    className="w100 df"
+                    className="w100"
                   />
                 </div>
                 <div className="provider-content flx50 fc6 p24">
@@ -133,7 +133,7 @@ const events = () => {
                 </div>
               </div>
             </div>
-            <div className="provider flx50">
+            <div className="provider flx50 mb24">
               <div className="provider-box mr24 df ofh br8 bg12">
                 <div className="provider-content flx50 fc6 p24">
                   <h2 className="provider-heading fs20 fw7 mb8">Pankaj Rana</h2>
@@ -149,11 +149,11 @@ const events = () => {
                     Email: iacftreasurer@gmail.com
                   </Link>
                 </div>
-                <div className="provider-img flx50">
+                <div className="provider-img flx50 df">
                   <img
                     src="images/team-member-01.jpg"
                     alt=""
-                    className="w100 df"
+                    className="w100"
                   />
                 </div>
               </div>
@@ -179,14 +179,14 @@ const events = () => {
               <div className="ticket-cards mr24 fc6 bg6 p24 br8">
                 <h3 className="ticket-category fw7 mb12">Pearl Level - $500</h3>
                 <p className="ticket-status ml8 mb16 v-center">
-                  <VscArrowCircleRight className="mr8 fs24 fc5" />
+                  <VscArrowCircleRight className="mr8 fs24 fc5 lh24" />
                   One Premium Gala Ticket
                 </p>
                 <h3 className="ticket-category fw7 mb12">
                   General Seat - $250
                 </h3>
                 <p className="ticket-status ml8 mb16 v-center mb24">
-                  <VscArrowCircleRight className="mr8 fs24 fc5" />
+                  <VscArrowCircleRight className="mr8 fs24 fc5 lh24" />
                   One General Gala Ticket
                 </p>
                 <Link href="/">
@@ -198,7 +198,7 @@ const events = () => {
             </div>
             <div className="ticket-card flx50 df jcc">
               <div className="ticket-cards mr24 fc6 bg6 p24 br8">
-                <h3 className="ticket-category fw7 mb12">
+                <h3 className="ticket-category fw7 mb12 lh24">
                   {" "}
                   Supporter/Table Sponsor Levels
                 </h3>
