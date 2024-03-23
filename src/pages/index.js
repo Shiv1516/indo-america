@@ -13,7 +13,6 @@ import NeedHelpOcean from "@/component/NeedHelpOcean";
 import EnvironmentalCount from "@/component/EnvironmentalCount";
 import MovementSection from "@/component/MovementSection";
 import Happening from "@/component/Happening";
-import { FaCalendar } from "react-icons/fa";
 import Calender from "@/component/Calender";
 
 const inter = Inter({ subsets: ["latin"] });

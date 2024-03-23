@@ -1965,13 +1965,23 @@ table {
 }
 @media only screen and (max-width: 450px) {
   .hero-section .slick-slider {
-    height: 85vw;
+    height: 400px;
     min-height: auto;
     max-height: auto;
   }
   .banner img {
-    height: 85vw;
+    height: 400px;
     object-fit: cover;
+  }
+  .fs52 {
+    font-size: 24px;
+  }
+  .calender .slick-prev {
+    left: -5px;
+    z-index: 99;
+  }
+  .calender .slick-next {
+    right: -5px;
   }
   .team-img,
   .contact-name,

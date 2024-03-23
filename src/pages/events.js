@@ -2,7 +2,6 @@ import { GoCheckCircle } from "react-icons/go";
 import React, { useState, useEffect } from "react";
 import Slider from "react-slick";
 import { VscArrowCircleRight } from "react-icons/vsc";
-
 import { fetchBannerData } from "../pages/api/aboutBanner.js";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";

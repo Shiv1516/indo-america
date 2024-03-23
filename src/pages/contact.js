@@ -1,5 +1,4 @@
 import React from "react";
-import Image from "next/image";
 import Link from "next/link";
 import { MdAlternateEmail } from "react-icons/md";
 import { IoIosMail } from "react-icons/io";
