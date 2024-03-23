@@ -1,6 +1,8 @@
 import Link from "next/link";
 import React from "react";
-import { GoCheckCircle } from "react-icons/go";
+import { IoIosArrowRoundForward } from "react-icons/io";
+import membersData from "../data/membersData.json";
+import advoiserData from "../data/advoiserData.json";
 
 const about = () => {
   return (
@@ -19,7 +21,7 @@ const about = () => {
                 multi-faceted philanthropic endeavor to help those in need in
                 the Greater Houston Area.{" "}
               </p>
-              <p className="who-we-are-subtext mb16 lh30">
+              <p className="who-we-are-subtext mb16 lh30 fc11">
                 For 32 years, IACF has appealed to the philanthropic spirit of
                 the Indo-American community in Houston to target four key areas:
                 Education, Family, General Welfare and Healthcare. Having our
@@ -27,7 +29,7 @@ const about = () => {
                 bridge between the Indo-American community and mainstream
                 causes.
               </p>
-              <p className="who-we-are-subtext mb16 lh30">
+              <p className="who-we-are-subtext mb16 lh30 fc11">
                 Part of the funding is allotted for grants to non-profit
                 organizations for specific projects and to provide scholarships
                 to graduating meritorious high school students from
@@ -85,8 +87,8 @@ const about = () => {
         </div>
       </section>
 
-      <section className="our-goal ptb48">
-        <div className="our-goal-section wrapper2 df fww ptb40">
+      <section className="our-goal pt48 pb230">
+        <div className="our-goal-section wrapper2 df fww ptb72">
           <div className="our-goal-main-content flx50 fc1 pr32">
             <h2 className="our-goal-heading fs42 lh48 fw7 mb24">
               IACF MISSION
@@ -113,80 +115,8 @@ const about = () => {
         </div>
       </section>
 
-      <section className="our-volunteers pb230 bg9">
-        <div className="our-volunteers-section wrapper2 df ptb72 aic">
-          <div className="our-volunteers-main-content flx33 mb24">
-            <div className="our-volunteers-title fc1 mlr24">
-              <h2 className="our-volunteers-heading fs42 fw7 mb32">
-                Our Board of Directors
-              </h2>
-              <p className="our-volunteers-subtext mb24 lh30">
-                No, Silicon Valley – bugs are not features. Reach out about a
-                technical issue, share your feedback or ask us about our
-                favorite lunch spot in Miami. We’re here no matter what.
-              </p>
-              <Link href="/">
-                <div className="supporting-btn transit2 h48 box-center br8 bg10 fc6 p32 fw7">
-                  Join Our Team
-                </div>
-              </Link>
-            </div>
-          </div>
-          <div className="our-volunteers-contents flx1 fc1 df fww mb24">
-            <div className="team-img flx33 tac mb32">
-              <img
-                src="images/team-member-01.jpg"
-                alt="team-member-01"
-                className="w100 mb16"
-              />
-              <h2 className="team-member-name fs22 fw7">Sylvia Noles</h2>
-            </div>
-            <div className="team-img flx33 tac mb32">
-              <img
-                src="images/team-member-01.jpg"
-                alt="team-member-01"
-                className="w100 mb16"
-              />
-              <h2 className="team-member-name fs22 fw7">Sylvia Noles</h2>
-            </div>
-            <div className="team-img flx33 tac mb32">
-              <img
-                src="images/team-member-01.jpg"
-                alt="team-member-01"
-                className="w100 mb16"
-              />
-              <h2 className="team-member-name fs22 fw7">Sylvia Noles</h2>
-            </div>
-            <div className="team-img flx33 tac mb32">
-              <img
-                src="images/team-member-01.jpg"
-                alt="team-member-01"
-                className="w100 mb16"
-              />
-              <h2 className="team-member-name fs22 fw7">Sylvia Noles</h2>
-            </div>
-            <div className="team-img flx33 tac mb32">
-              <img
-                src="images/team-member-01.jpg"
-                alt="team-member-01"
-                className="w100 mb16"
-              />
-              <h2 className="team-member-name fs22 fw7">Sylvia Noles</h2>
-            </div>
-            <div className="team-img flx33 tac mb32">
-              <img
-                src="images/team-member-01.jpg"
-                alt="team-member-01"
-                className="w100 mb16"
-              />
-              <h2 className="team-member-name fs22 fw7">Sylvia Noles</h2>
-            </div>
-          </div>
-        </div>
-      </section>
-
       <section className="wwa-support-our-work pa w100">
-        <div className="wwa-support-card wrapper2 df aisc br8 ofh bg10 aic">
+        <div className="wwa-support-card wrapper2 df  br8 ofh bg10">
           <div className="wwa-support-card-img df flx50">
             <img
               src="images/support-our-work.jpg"
@@ -218,8 +148,87 @@ const about = () => {
         </div>
       </section>
 
-      <section className="wwa-join-us pt230 bg6 pt72">
-        <div className="wwa-join-us-section wrapper2 ptb72 jcc df">
+      <section className="Board-of-director pb48 pt230 bg6">
+        <div className="director-section wrapper2 pt72 pb40">
+          <div className="directore-heading h-center pt40">
+            <div class="directore-heading-section tac w75">
+              <h4 class="directore-subheading ttu bg1 dib fc1 fs14 fw5 br4 plr16 ptb8 mb24">
+                Board of Members
+              </h4>
+              <h2 class="directore-heading fs42 lh48 fc6 fw7 mb24">
+                Meet Our <span class="ff2 fc2">Dedicated Team</span>
+              </h2>
+              <p class="directore-text lh30">
+                Our board comprises talented individuals committed to guiding
+                our organization towards excellence. Get to know the faces
+                behind our strategic decisions and vision for the future.
+              </p>
+            </div>
+          </div>
+          <div className="board-members df fww pt32">
+            {membersData.map((member, index) => (
+              <div className="member-cards flx25 pr jcc aisc ofh mb12">
+                <div className="members-img df jcc">
+                  <img
+                    src={member.image}
+                    alt={member.alt}
+                    className="member-img w100 df transit1 aft pr"
+                  />
+                  <IoIosArrowRoundForward className="side-icon pa p8 bg2 fs24 br50 fc6" />
+                </div>
+                <div className="mem-card-text p12 transit2 mt32 tac">
+                  <h2 className="mem-card-name fc6 fs18 mb8 fw6">
+                    {member.name}
+                  </h2>
+                  <p className="mem-card-degig fs14">{member.role}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="Board-of-advoiser ptb48 bg8">
+        <div className="advoiser-container wrapper2 ptb40">
+          <div className="advoiser-heading h-center">
+            <div class="advoiser-heading-section tac w75">
+              <h4 class="advoiser-subheading ttu bg5 dib fc1 fs14 fw5 br4 plr16 ptb8 mb24">
+                Board of Advisers
+              </h4>
+              <h2 class="advoiser-heading fs42 lh48 fc1 fw7 mb24">
+                Expert Guidance for{" "}
+                <span class="ff2 fc8">Strategic Decisions</span>
+              </h2>
+              <p class="advoiser-text lh30 fc9">
+                Meet our esteemed board of advisers, a team of industry experts
+                and thought leaders offering invaluable insights and strategic
+                direction to drive our organization forward.
+              </p>
+            </div>
+          </div>
+          <div className="advoiser-members df fww pt32 fc9">
+            {advoiserData.map((member, index) => (
+              <div className="member-cards flx25 pr jcc aisc ofh mb12">
+                <div className="members-img df jcc">
+                  <img
+                    src={member.image}
+                    alt={member.alt}
+                    className="member-img w100 df transit1 aft pr"
+                  />
+                  <IoIosArrowRoundForward className="side-icon pa p8 bg2 fs24 br50 fc6" />
+                </div>
+                <div className="mem-card-text p12 transit2 mt32 tac">
+                  <h2 className="mem-card-name fs18 mb8 fw6">{member.name}</h2>
+                  <p className="mem-card-degig fs14">{member.role}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="wwa-join-us bg6 ptb48">
+        <div className="wwa-join-us-section wrapper2 ptb40 jcc df">
           <div className="wwa-join-us-container tac">
             <h2 className="wwa-join-us-heading fs42 lh36 fc6 fw7 mb24">
               Join Us Right Now!
