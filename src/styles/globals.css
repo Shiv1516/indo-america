@@ -1964,6 +1964,15 @@ table {
   }
 }
 @media only screen and (max-width: 450px) {
+  .hero-section .slick-slider {
+    height: 85vw;
+    min-height: auto;
+    max-height: auto;
+  }
+  .banner img {
+    height: 85vw;
+    object-fit: cover;
+  }
   .team-img,
   .contact-name,
   .contact-email,
