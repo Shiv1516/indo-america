@@ -9,12 +9,6 @@ const Footer = () => {
         <div className="footer-container df jcsb mb40">
           <div className="footer-content flx50 fc1 ptb48">
             <Link href="/" className="footer-logo ptb24">
-              {/* <Image
-                src="/be-part-of-change-img.jpg"
-                alt="logo"
-                height={200}
-                weight={200}
-              /> */}
               <img src="images/logo.png" alt="logo"></img>
             </Link>
             <p className="footer-text ptb32 lh30 fs18">
@@ -62,34 +56,16 @@ const Footer = () => {
             <ul className="footer-social-link v-center pt24">
               <li>
                 <Link href="/" className="social-links pr12">
-                  {/* <Image
-                    src="/svg-icon/facebook.svg"
-                    alt="facebook"
-                    height={200}
-                    width={200}
-                  /> */}
                   <img src="images/svg-icon/facebook.svg" alt="facebook"></img>
                 </Link>
               </li>
               <li>
                 <Link href="/" className="social-links plr12">
-                  {/* <Image
-                    src="/svg-icon/instagram.svg"
-                    alt="instagram"
-                    height={200}
-                    width={200}
-                  /> */}
                   <img src="images/svg-icon/youtube.svg" alt="youtube"></img>
                 </Link>
               </li>
               <li>
                 <Link href="/" className="social-links plr12">
-                  {/* <Image
-                    src="/svg-icon/youtube.svg"
-                    alt="youtube"
-                    height={200}
-                    width={200}
-                  /> */}
                   <img
                     src="images/svg-icon/instagram.svg"
                     alt="instagram"
@@ -98,21 +74,17 @@ const Footer = () => {
               </li>
               <li>
                 <Link href="/" className="social-links plr12">
-                  {/* <Image
-                    src="/svg-icon/twitter.svg"
-                    alt="twitter"
-                    height={200}
-                    width={200}
-                  /> */}
                   <img src="images/svg-icon/twitter.svg" alt="twitter"></img>
                 </Link>
               </li>
             </ul>
           </div>
         </div>
-        <div className="botom-footer ptb24 fc4 pt40">
-          <a href="/">cmsmasters</a>
-          <span>©2024 - All Rights Reserved - This is a sample website.</span>
+        <div className="botom-footer ptb24 fc11 pt40 fc12">
+          <a href="https://aajux.com/">AAJUX DEGITAL STUDIO </a>
+          <span className="mlr8">
+            ©2024 - All Rights Reserved - This is a sample website.
+          </span>
         </div>
       </div>
     </footer>

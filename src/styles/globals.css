@@ -177,6 +177,9 @@ table {
 .tac {
   text-align: center;
 }
+.taj {
+  text-align: justify;
+}
 
 .tal {
   text-align: left;
@@ -931,6 +934,9 @@ table {
 .brd-b1 {
   border-left: 40px solid #008cc1;
 }
+.brd-b2 {
+  border-bottom: 0.5px solid #dbe2e7;
+}
 .bs1,
 .bs1-h1:hover {
   box-shadow: 0px 0px 1px 0px #fff;
@@ -1064,7 +1070,7 @@ table {
 }
 .menu-btn,
 .logo {
-  z-index: 100;
+  z-index: 98;
 }
 .menu-data {
   transition: all 0.5s;
@@ -1122,6 +1128,21 @@ table {
 .popup-btn:hover {
   color: #fff;
   background-color: #005ba6;
+}
+.nav-list-dd {
+  display: none;
+}
+.nav-item:hover .nav-list-dd {
+  display: flex;
+}
+.nav-list-dd {
+  flex-direction: column;
+  top: 55px;
+  width: 18vw;
+  max-width: 280px;
+  left: 0;
+  z-index: 99;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 /* navbar */
 
@@ -1544,9 +1565,6 @@ table {
 .email-box:hover {
   border: 1px solid #4aae5f;
 }
-.contect-img {
-  padding: 20px 120px 20px 20px;
-}
 .map-box {
   bottom: 0px;
 }
@@ -1675,6 +1693,9 @@ table {
   .fs56 {
     font-size: 40px;
   }
+  .ptb48 {
+    padding: 16px 0 16px 0;
+  }
   .wwd-heading,
   .keep-it-up-text,
   .support-our-word-heading,
@@ -1725,7 +1746,17 @@ table {
   .contact-maps,
   .events-content,
   .events-img,
-  .provider {
+  .provider,
+  .spread-text,
+  .spread-img,
+  .volunteer-img,
+  .volunteer-text,
+  .donate-text,
+  .contact-form,
+  .initiatives-text,
+  .initiatives-img,
+  .gallery-section,
+  .gallery-category {
     flex: 0 0 100%;
     max-width: 100%;
   }
@@ -1794,7 +1825,12 @@ table {
   .contact-content,
   .who-we-are-img-box,
   .wwa-img-box,
-  .our-goal-img img {
+  .our-goal-img img,
+  .spread-img,
+  .volunteer-text,
+  .contact-form,
+  .initiatives-img,
+  .gallery-category {
     padding: 16px 0 16px 0;
   }
   .who-we-are-content {
@@ -1805,10 +1841,26 @@ table {
   .banner-data-wrap {
     padding-bottom: 0px;
   }
+  .fs42 {
+    font-size: 36px;
+  }
   .hero-section .slick-slider {
     height: 46vw;
     min-height: auto;
     max-height: auto;
+  }
+  .banner img {
+    height: 47vw;
+    object-fit: cover;
+  }
+  .about-hero-section .slick-slider {
+    height: 55vh;
+    max-height: 500px;
+  }
+  .about-banner img {
+    height: 55vh;
+    max-height: 500px;
+    object-fit: cover;
   }
   .hero-heading {
     font-size: 24px;
@@ -1843,7 +1895,6 @@ table {
   .contact-us-content,
   .contact-us-img,
   .contact-form,
-  .contect-img-box,
   .wwa-support-card-img,
   .wwa-support-card-content,
   .gallery-img,
@@ -1912,6 +1963,15 @@ table {
   }
 }
 @media only screen and (max-width: 540px) {
+  .hero-section .slick-slider {
+    height: 400px;
+    min-height: auto;
+    max-height: auto;
+  }
+  .banner img {
+    height: 400px;
+    object-fit: cover;
+  }
   .hero-content,
   .need-help-ocean-heading,
   .supporting-heading,
@@ -1962,17 +2022,12 @@ table {
   .ticket-card {
     display: block;
   }
+  .top-nab-item {
+    padding: 8px;
+    line-height: 20px;
+  }
 }
 @media only screen and (max-width: 450px) {
-  .hero-section .slick-slider {
-    height: 400px;
-    min-height: auto;
-    max-height: auto;
-  }
-  .banner img {
-    height: 400px;
-    object-fit: cover;
-  }
   .fs52 {
     font-size: 24px;
   }
@@ -2112,12 +2167,40 @@ table {
 .member-cards:hover .side-icon {
   display: none;
 }
-
-/* .member-img::after {
-  top: 0;
-  left: 0;
+.membership-form {
+  display: none;
+  z-index: 99;
+}
+.open-m-form.membership-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.88);
+}
+.m-form {
+  width: 96%;
+  max-width: 500px;
+  min-height: 400px;
+  max-height: 96vh;
+  overflow-y: auto;
+}
+.m-form label:not(.v-center) {
+  display: block;
+  margin-bottom: 8px;
+  margin-top: 24px;
+}
+.m-form input:not(.checkbox-m-form) {
+  display: block;
   width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.75);
-  z-index: 2; 
-} */
+  height: 40px;
+  border: 1px solid #e1e1e1;
+  border-radius: 2px;
+  padding: 0 24px;
+}
+.m-form textarea {
+  height: 80px;
+  resize: none;
+  border: 1px solid #e1e1e1;
+  border-radius: 2px;
+  padding: 0 24px;
+}
