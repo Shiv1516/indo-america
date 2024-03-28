@@ -1987,7 +1987,17 @@ table {
   }
   .movement,
   .support-our-word-heading,
-  .campaiging-heading {
+  .campaiging-heading,
+  .volunteer-text-subheading,
+  .initiatives-text-subheading,
+  .spread-text-subheading,
+  .donate-text-subheading,
+  .who-we-are-heading,
+  .wwa-heading,
+  .our-goal-heading,
+  .directore-heading,
+  .advoiser-heading,
+  .wwa-join-us-heading {
     font-size: 22px;
     line-height: 24px;
   }
@@ -2001,7 +2011,9 @@ table {
   .elementor-text {
     line-height: 14px;
   }
-  .wwa-subtext {
+  .wwa-subtext,
+  .directore-text,
+  .advoiser-text {
     font-size: 14px;
   }
   .wwd-cards,
@@ -2046,7 +2058,10 @@ table {
 }
 @media only screen and (max-width: 450px) {
   .fs52 {
-    font-size: 24px;
+    font-size: 26px;
+  }
+  .fs28 {
+    font-size: 20px;
   }
   .calender .slick-prev {
     left: -5px;
@@ -2079,9 +2094,6 @@ table {
   }
   .wwd-cards {
     height: 250px;
-  }
-  .wwa-join-us {
-    padding-top: 250px;
   }
 }
 .blink,
