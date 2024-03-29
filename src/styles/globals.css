@@ -1599,7 +1599,7 @@ table {
 .hero-section .slick-prev,
 .about-hero-section .slick-prev {
   left: 10px;
-  z-index: 99;
+  z-index: 98;
 }
 .hero-section .slick-next,
 .about-hero-section .slick-next {
@@ -1616,7 +1616,7 @@ table {
 /* Event Page */
 /* Responsive at different resolution */
 @media only screen and (max-width: 1025px) {
-  .navbar {
+  /* .navbar {
     display: none;
     position: absolute;
     top: 113px;
@@ -1644,7 +1644,84 @@ table {
   }
   .menu-btn {
     display: flex;
+  } */
+
+  .hamburger-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
   }
+
+  .hamburger-line {
+    width: 100%;
+    height: 3px;
+    background-color: #333;
+    transition: all 0.3s ease;
+  }
+
+  .open-nav .hamburger-line:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+  }
+
+  .open-nav .hamburger-line:nth-child(2) {
+    opacity: 0;
+  }
+
+  .open-nav .hamburger-line:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+  }
+
+  .navbar {
+    display: none;
+    position: absolute;
+    top: 129px;
+    left: 0;
+    min-height: calc(100vh - 78px);
+    max-height: calc(100vh - 79px);
+    flex-direction: column;
+    background-color: #008cc1;
+    overflow: hidden;
+    overflow-y: auto;
+    flex-wrap: wrap;
+    align-items: start;
+    justify-content: start;
+    width: 100vw;
+    z-index: 100;
+  }
+  .navbar.open-nav {
+    display: flex;
+  }
+  .nav-list-dd {
+    display: block;
+    position: static;
+    background-color: transparent;
+    box-shadow: none;
+    color: #f1f1f1;
+    width: 100%;
+  }
+  .nav-item-dd {
+    border: none;
+  }
+  .nav-list {
+    flex-direction: column;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    left: 0;
+    color: #f1f1f1;
+  }
+  .popup-m-btn {
+    margin-bottom: 16px;
+    margin-top: 16px;
+  }
+  .popup-m-btn,
+  .popup-d-btn {
+    margin-left: 20px;
+  }
+
   .movement-container {
     background-image: url(../../public/images/movment-bg-img.jpg);
     border-radius: 8px;
