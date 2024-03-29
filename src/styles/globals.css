@@ -230,6 +230,9 @@ table {
 .aisc {
   align-items: stretch;
 }
+.ass {
+  align-self: stretch;
+}
 
 /* Column and Row */
 .fdc {
@@ -2196,11 +2199,18 @@ table {
 .member-cards:hover .side-icon {
   display: none;
 }
-.membership-form {
+.membership-form,
+.donate-form {
   display: none;
   z-index: 99;
 }
 .open-m-form.membership-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.88);
+}
+.open-d-form.donate-form {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -2232,4 +2242,13 @@ table {
   border: 1px solid #e1e1e1;
   border-radius: 2px;
   padding: 0 24px;
+}
+.m-form select {
+  height: 40px;
+  width: 100%;
+  border: 1px solid #e1e1e1;
+  border-radius: 2px;
+  padding: 0 8px;
+  font-size: 14px;
+  color: #4d4b4b;
 }

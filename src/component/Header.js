@@ -4,6 +4,7 @@ import { RiArrowDownSLine } from "react-icons/ri";
 import { BsPersonFillAdd } from "react-icons/bs";
 import { FaDonate } from "react-icons/fa";
 import MembershipForm from "../component/MembershipForm";
+import DonateForm from "./DonateForm";
 
 const Header = () => {
   const [isPopupOpen, setIsPopupOpen] = useState(false);
@@ -18,16 +19,14 @@ const Header = () => {
   return (
     <>
       <MembershipForm isOpen={isPopupOpen} onClose={closePopup} />
+      <DonateForm isOpen={isPopupOpen} onClose={closePopup} />
       <div className="top-navbar bg5">
         <ul className="v-center wrapper df jce fc1 fw7 pr24 fs14">
-          <li className="top-nab-item transit2 p16 fc-h1">
-            <Link href="/about">About IACF</Link>
-          </li>
           <li className="top-nab-item transit2 p16 fc-h1">
             <Link href="/whatiacfdoes">What IACF Does</Link>
           </li>
           <li className="top-nab-item transit2 p16 fc-h1">
-            <Link href="/whoyoucanhelp">How You Can Help</Link>
+            <Link href="/howyoucanhelp">How You Can Help</Link>
           </li>
           <li className="top-nab-item transit2 p16 fc-h1">
             <Link href="contact">Contact</Link>
@@ -51,6 +50,9 @@ const Header = () => {
           </div>
           <div className="navbar v-center fww fs18 fw7">
             <ul className="nav-list v-center cp fww fc3">
+              <li className="nav-item transit2 p16 mlr4 fc-h1 ass">
+                <Link href="/about">About IACF</Link>
+              </li>
               <li className="nav-item transit2 p16 mlr4 fc-h1">
                 <Link href="/events" className="df pr">
                   Events
@@ -85,7 +87,7 @@ const Header = () => {
                   <RiArrowDownSLine className="material-symbols-outlined ml4 fs22" />
                 </Link>
               </li>
-              <li className="nav-item transit2 p16 mlr4 fc-h1">
+              <li className="nav-item transit2 p16 mlr4 fc-h1 ass">
                 <Link href="/gallery">Gallery</Link>
               </li>
             </ul>
@@ -96,7 +98,10 @@ const Header = () => {
               <BsPersonFillAdd className="mr8 fs24" />
               Membership
             </button>
-            <button className="popup-btn transit2 br4 plr24 h48 fc1 cp bg1 ml32 v-center">
+            <button
+              onClick={openPopup}
+              className="popup-btn transit2 br4 plr24 h48 fc1 cp bg1 ml32 v-center"
+            >
               <FaDonate className="mr8 fs24" />
               Donate Now
             </button>

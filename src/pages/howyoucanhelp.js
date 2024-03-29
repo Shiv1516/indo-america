@@ -1,7 +1,7 @@
 import Link from "next/link";
 import React from "react";
 
-const whoyoucanhelp = () => {
+const howyoucanhelp = () => {
   return (
     <>
       <section className="spread ptb48 bg8">
@@ -181,4 +181,4 @@ const whoyoucanhelp = () => {
   );
 };
 
-export default whoyoucanhelp;
+export default howyoucanhelp;

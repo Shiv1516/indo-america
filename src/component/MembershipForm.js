@@ -8,12 +8,8 @@ const MembershipForm = ({ isOpen, onClose }) => {
   const [membershipType, setMembershipType] = useState("");
   const [donationAmount, setDonationAmount] = useState("");
   const [volunteerInterests, setVolunteerInterests] = useState([]);
-
-  // Handle form submission
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Send form data to backend or perform desired actions
-    // For demonstration purposes, log form data to console
     console.log({
       fullName,
       email,
@@ -22,11 +18,10 @@ const MembershipForm = ({ isOpen, onClose }) => {
       donationAmount,
       volunteerInterests,
     });
-    // Reset form fields after submission
+
     resetForm();
   };
 
-  // Reset form fields
   const resetForm = () => {
     setFullName("");
     setEmail("");

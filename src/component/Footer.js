@@ -38,19 +38,19 @@ const Footer = () => {
           <div className="footer-item bg10 flx33 br-br-01 plr40 ptb40 mb40">
             <ul className="footer-item-list fc6 fw7 fs22 pt48">
               <li className="footer-item-lists mb24 fc-h1 transit1">
-                <a href="/">Our Campaigns</a>
+                <a href="/about">About IACF</a>
               </li>
               <li className="footer-item-lists mb24 fc-h1 transit1">
-                <a href="/">Get Involved</a>
+                <a href="/events">Events</a>
               </li>
               <li className="footer-item-lists mb24 fc-h1 transit1">
-                <a href="/">Donate Now</a>
+                <a href="/whatiacfdoes">What IACF Does</a>
               </li>
               <li className="footer-item-lists mb24 fc-h1 transit1">
-                <a href="/">Blog</a>
+                <a href="/howyoucanhelp">How You Can Help</a>
               </li>
               <li className="footer-item-lists mb24 fc-h1 transit1">
-                <a href="/">Image Credits</a>
+                <a href="/contact">Contact</a>
               </li>
             </ul>
             <ul className="footer-social-link v-center pt24">
