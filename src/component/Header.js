@@ -65,11 +65,6 @@ const Header = () => {
               className="logo-img"
             />
           </Link>
-          {/* <div className="menu-btn w48 h48 cp box-center fdc ml32 p8">
-            <span className="menu-line"></span>
-            <span className="menu-line"></span>
-            <span className="menu-line"></span>
-          </div> */}
           <HamburgerMenu isOpen={isMenuOpen} toggleMenu={toggleMenu} />
           <div className="navbar v-center fww fs18 fw7">
             <ul className="nav-list v-center cp fww fc3">
@@ -104,12 +99,12 @@ const Header = () => {
                   </li>
                 </ul>
               </li>
-              <li className="nav-item transit2 p16 mlr4 fc-h1">
+              {/* <li className="nav-item transit2 p16 mlr4 fc-h1">
                 <Link href="/acknowledgement" className="df">
                   Acknowledgement
                   <RiArrowDownSLine className="material-symbols-outlined ml4 fs22" />
                 </Link>
-              </li>
+              </li> */}
               <li className="nav-item transit2 p16 mlr4 fc-h1 ass">
                 <Link href="/gallery">Gallery</Link>
               </li>

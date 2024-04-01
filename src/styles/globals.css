@@ -2115,7 +2115,7 @@ table {
     display: block;
   }
   .top-nab-item {
-    padding: 8px;
+    padding: 16px 8px;
     line-height: 20px;
   }
   .our-approach:after {
