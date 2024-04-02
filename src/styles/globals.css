@@ -1073,7 +1073,8 @@ table {
   margin-left: auto;
   margin-right: auto;
 }
-.logo img {
+.logo img,
+.footer-logo img {
   height: 80px;
 }
 
