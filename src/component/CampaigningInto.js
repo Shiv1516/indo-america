@@ -35,7 +35,10 @@ const CampaigningInto = () => {
     };
   }, [controls]);
   return (
-    <section className="campaigning-intro ptb72 w100 ofh" id="scrollContainer">
+    <section
+      className="campaigning-intro ptb72 w100 ofh bg6"
+      id="scrollContainer"
+    >
       <div className="campaigning wrapper df ptb72">
         <motion.div
           className="campaigning-img flx50 pr"

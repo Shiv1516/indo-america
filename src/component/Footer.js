@@ -81,9 +81,10 @@ const Footer = () => {
           </div>
         </div>
         <div className="botom-footer ptb24 fc11 pt40 fc12">
-          <a href="https://aajux.com/">AAJUX DEGITAL STUDIO </a>
+          Indo-America Charity Foundation
           <span className="mlr8">
-            ©2024 - All Rights Reserved - This is a sample website.
+            ©2024 - All Rights Reserved - Powerd by{" "}
+            <a href="https://aajux.com/">AAJUX</a> .
           </span>
         </div>
       </div>

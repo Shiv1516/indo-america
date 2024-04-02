@@ -165,22 +165,24 @@ const about = () => {
               </p>
             </div>
           </div>
-          <div className="board-members df fww pt32">
+          <div className="board-members df fww mt48">
             {membersData.map((member, index) => (
-              <div className="member-cards flx25 pr jcc aisc ofh mb12">
-                <div className="members-img df jcc">
-                  <img
-                    src={member.image}
-                    alt={member.alt}
-                    className="member-img w100 df transit1 aft pr"
-                  />
-                  <IoIosArrowRoundForward className="side-icon pa p8 bg2 fs24 br50 fc6" />
-                </div>
-                <div className="mem-card-text p12 transit2 mt32 tac">
-                  <h2 className="mem-card-name fc6 fs18 mb8 fw6">
-                    {member.name}
-                  </h2>
-                  <p className="mem-card-degig fs14">{member.role}</p>
+              <div className="membership-card flx25 mb16">
+                <div className="member-cards pr jcc aisc ofh brd1 mr16 pt12 br4">
+                  <div className="members-img df jcc">
+                    <img
+                      src={member.image}
+                      alt={member.alt}
+                      className="member-img w100 df transit1"
+                    />
+                    <IoIosArrowRoundForward className="side-icon pa p8 bg2 fs24 br50 fc6" />
+                  </div>
+                  <div className="mem-card-text p12 transit2 mt16 tac">
+                    <h2 className="mem-card-name fc6 fs18 mb8 fw6">
+                      {member.name}
+                    </h2>
+                    <p className="mem-card-degig fs14">{member.role}</p>
+                  </div>
                 </div>
               </div>
             ))}
@@ -208,18 +210,22 @@ const about = () => {
           </div>
           <div className="advoiser-members df fww pt32 fc9">
             {advoiserData.map((member, index) => (
-              <div className="member-cards flx25 pr jcc aisc ofh mb12">
-                <div className="members-img df jcc">
-                  <img
-                    src={member.image}
-                    alt={member.alt}
-                    className="member-img w100 df transit1 aft pr"
-                  />
-                  <IoIosArrowRoundForward className="side-icon pa p8 bg2 fs24 br50 fc6" />
-                </div>
-                <div className="mem-card-text p12 transit2 mt32 tac">
-                  <h2 className="mem-card-name fs18 mb8 fw6">{member.name}</h2>
-                  <p className="mem-card-degig fs14">{member.role}</p>
+              <div className="membership-card flx25 mb16">
+                <div className="member-cards pr jcc aisc ofh brd4 mr16 pt12 br4">
+                  <div className="members-img df jcc">
+                    <img
+                      src={member.image}
+                      alt={member.alt}
+                      className="member-img w100 df transit1"
+                    />
+                    <IoIosArrowRoundForward className="side-icon pa p8 bg2 fs24 br50 fc6" />
+                  </div>
+                  <div className="mem-card-text p12 transit2 mt32 tac">
+                    <h2 className="mem-card-name fs18 mb8 fw6">
+                      {member.name}
+                    </h2>
+                    <p className="mem-card-degig fs14">{member.role}</p>
+                  </div>
                 </div>
               </div>
             ))}

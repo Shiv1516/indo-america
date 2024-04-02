@@ -14,7 +14,7 @@ const SupportingMission = () => {
         </div>
         <div className="supporting-cards df fww jcsb ptb24 aisc df">
           <div className="card flx33 mb24 df">
-            <div className="card-inner-content ofh br8 bg2 mr24">
+            <div className="card-inner-content ofh br8 bg2 mlr12">
               <div className="card-img ofh">
                 <img
                   src="images/ngo-partner/aada-logo.png"
@@ -44,7 +44,7 @@ const SupportingMission = () => {
             </div>
           </div>
           <div className="card flx33 mb24 df">
-            <div className="card-inner-content ofh br8 bg2 mr24">
+            <div className="card-inner-content ofh br8 bg2 mlr12">
               <div className="card-img ofh">
                 <img
                   src="images/ngo-partner/avance-logo.jpg"
@@ -74,7 +74,7 @@ const SupportingMission = () => {
             </div>
           </div>
           <div className="card flx33 mb24 df">
-            <div className="card-inner-content ofh br8 bg2 mr24">
+            <div className="card-inner-content ofh br8 bg2 mlr12">
               <div className="card-img ofh">
                 <img
                   src="images/ngo-partner/daya-logo.png"

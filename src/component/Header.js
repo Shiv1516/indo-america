@@ -3,7 +3,6 @@ import { RiArrowDownSLine } from "react-icons/ri";
 import { BsPersonFillAdd } from "react-icons/bs";
 import { FaDonate } from "react-icons/fa";
 import MembershipForm from "../component/MembershipForm";
-import DonateForm from "../component/DonateForm";
 import HamburgerMenu from "../component/HamburgerMenu";
 import Link from "next/link";
 
@@ -28,29 +27,19 @@ const Header = () => {
   const closePopupM = () => {
     setIsPopupOpenM(false);
   };
-  const [isPopupOpenD, setIsPopupOpenD] = useState(false);
-
-  const openPopupD = () => {
-    setIsPopupOpenD(true);
-  };
-
-  const closePopupD = () => {
-    setIsPopupOpenD(false);
-  };
 
   return (
     <>
       <MembershipForm isOpen={isPopupOpenM} onClose={closePopupM} />
-      <DonateForm isOpen={isPopupOpenD} onClose={closePopupD} />
       <div className="top-navbar bg5">
         <ul className="v-center wrapper df jce fc1 fw7 pr24 fs14">
-          <li className="top-nab-item transit2 p16 fc-h1">
+          <li className="top-nab-item transit2 p16">
             <Link href="/whatiacfdoes">What IACF Does</Link>
           </li>
-          <li className="top-nab-item transit2 p16 fc-h1">
+          <li className="top-nab-item transit2 p16">
             <Link href="/howyoucanhelp">How You Can Help</Link>
           </li>
-          <li className="top-nab-item transit2 p16 fc-h1">
+          <li className="top-nab-item transit2 p16">
             <Link href="/contact">Contact</Link>
           </li>
         </ul>
@@ -78,24 +67,16 @@ const Header = () => {
                 </Link>
                 <ul className="nav-list-dd pa bg2 fc6">
                   <li className="nav-item-dd transit2 p16 brd-b2 fc-h1">
-                    <Link href="#" className="">
-                      Gala
-                    </Link>
+                    <Link href="/gala">Gala</Link>
                   </li>
                   <li className="nav-item-dd transit2 p16 brd-b2 fc-h1">
-                    <Link href="#" className="">
-                      Walk & Care
-                    </Link>
+                    <Link href="/iwalkicare">I Walk & I Care</Link>
                   </li>
                   <li className="nav-item-dd transit2 p16 brd-b2 fc-h1">
-                    <Link href="#" className="">
-                      Grant Night
-                    </Link>
+                    <Link href="/grantnight">Grant Night</Link>
                   </li>
                   <li className="nav-item-dd transit2 p16 brd-b2 fc-h1">
-                    <Link href="#" className="">
-                      Live in Houston
-                    </Link>
+                    <Link href="/liveinhouston">Live in Houston</Link>
                   </li>
                 </ul>
               </li>
@@ -116,13 +97,13 @@ const Header = () => {
               <BsPersonFillAdd className="mr8 fs24" />
               Membership
             </button>
-            <button
-              onClick={openPopupD}
+            <Link
+              href="https://www.paypal.com/donate?token=fQKEOQs3go0wzRLWSPxfdOfsuolpqBzG5_a0XkaxZGXqK65kmyHfDMulU5_K3C-TEXU_fuqLIHluvRXt"
               className="popup-d-btn transit2 br4 plr16 h48 fc1 cp bg1 ml32 v-center"
             >
               <FaDonate className="mr8 fs24" />
               Donate Now
-            </button>
+            </Link>
           </div>
         </div>
       </nav>

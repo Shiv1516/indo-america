@@ -65,7 +65,7 @@ const Wwd = () => {
             animate={isVisible ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 1.4 }}
           >
-            <div className="wwd-card w100 transit2 pr fc1 df jcc mr24 aft pr ofh w100">
+            <div className="wwd-card w100 transit2 pr fc1 df jcc mlr12 aft pr ofh w100">
               <img
                 src="images/scholarship-program-img.jpg"
                 alt="scholarship-program-img"
@@ -95,7 +95,7 @@ const Wwd = () => {
             animate={isVisible ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 1 }}
           >
-            <div className="wwd-card w100 transit2 pr fc1 df jcc mr24 aft pr ofh">
+            <div className="wwd-card w100 transit2 pr fc1 df jcc mlr12 aft pr ofh">
               <img
                 src="images/waca-img.jpg"
                 alt="stemsa-img"
@@ -125,7 +125,7 @@ const Wwd = () => {
             animate={isVisible ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 1 }}
           >
-            <div className="wwd-card w100 transit2 pr fc1 df jcc mr24 aft pr ofh">
+            <div className="wwd-card w100 transit2 pr fc1 df jcc mlr12 aft pr ofh">
               <img
                 src="images/stemsa-img.jpg"
                 alt="waca-img"
@@ -155,7 +155,7 @@ const Wwd = () => {
             animate={isVisible ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 1.4 }}
           >
-            <div className="wwd-card w100 transit2 pr fc1 df jcc mr24 aft pr ofh">
+            <div className="wwd-card w100 transit2 pr fc1 df jcc mlr12 aft pr ofh">
               <img
                 src="images/hsce-img.jpg"
                 alt="wwe"

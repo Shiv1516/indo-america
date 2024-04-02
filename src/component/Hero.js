@@ -34,7 +34,7 @@ const HeroSection = () => {
               alt={banner.title}
               className="w100 df"
             />
-            <div className="banner-data-wrap pa t0 b0 df jcc aie aft pr pb32">
+            <div className="banner-data-wrap pa t0 b0 df jcc aie aft pr pb32 w100">
               <div className="banner-content tac pb48 zi99">
                 <h2 className="hero-sub-heading fs16 br24 plr24 ttu dif plr16 ptb8 bg11 fc1  mb16 ls1">
                   {banner.title}

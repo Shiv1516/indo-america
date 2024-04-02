@@ -12,7 +12,7 @@ const Happening = () => {
         </div>
         <div className="happening-card-container df fww mtb24">
           <div className="happening-card flx50">
-            <div className="happening-cards ofh br8 mr32 mb24">
+            <div className="happening-cards ofh br8 mlr16 mb24">
               <img
                 src="images/covid-relief.jpg"
                 alt="happening"
@@ -29,9 +29,8 @@ const Happening = () => {
               </h2>
               <div className="card-tag-marks v-center">
                 <div className="card-detail v-center lh30 fs14">
-                  {" "}
                   <span className="material-symbols-outlined mr8 fw5">
-                    pace{" "}
+                    pace
                   </span>
                   January 20, 2024
                 </div>
@@ -42,7 +41,7 @@ const Happening = () => {
             </div>
           </div>
           <div className="happening-card flx50">
-            <div className="happening-cards ofh br8 mr32 mb24">
+            <div className="happening-cards ofh br8 mlr16 mb24">
               <img
                 src="images/iacf-scholars-empowering.jpg"
                 alt="happening"
@@ -55,13 +54,12 @@ const Happening = () => {
                 Fundraising
               </div>
               <h2 className="card-text fs28 fc6 fw7 mb24 lh30 transit2 fc-h1">
-                IACF Scholars: Empowering Tomorrow's Leaders Through Education{" "}
+                IACF Scholars: Empowering Tomorrow's Leaders Through Education
               </h2>
               <div className="card-tag-marks v-center">
                 <div className="card-detail v-center lh30 fs14">
-                  {" "}
                   <span className="material-symbols-outlined mr8 fw5">
-                    pace{" "}
+                    pace
                   </span>
                   January 20, 2024
                 </div>
@@ -72,7 +70,7 @@ const Happening = () => {
             </div>
           </div>
           <div className="happening-card flx50">
-            <div className="happening-cards ofh br8 mr32 mb24">
+            <div className="happening-cards ofh br8 mlr16 mb24">
               <img
                 src="images/contribution-supporting.jpg"
                 alt="happening"
@@ -90,9 +88,8 @@ const Happening = () => {
               </h2>
               <div className="card-tag-marks v-center">
                 <div className="card-detail v-center lh30 fs14">
-                  {" "}
                   <span className="material-symbols-outlined mr8 fw5">
-                    pace{" "}
+                    pace
                   </span>
                   January 20, 2024
                 </div>
@@ -103,7 +100,7 @@ const Happening = () => {
             </div>
           </div>
           <div className="happening-card flx50">
-            <div className="happening-cards ofh br8 mr32 mb24">
+            <div className="happening-cards ofh br8 mlr16 mb24">
               <img
                 src="images/happening.jpg"
                 alt="happening"
@@ -120,9 +117,8 @@ const Happening = () => {
               </h2>
               <div className="card-tag-marks v-center">
                 <div className="card-detail v-center lh30 fs14">
-                  {" "}
                   <span className="material-symbols-outlined mr8 fw5">
-                    pace{" "}
+                    pace
                   </span>
                   January 20, 2024
                 </div>

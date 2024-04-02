@@ -1,6 +1,6 @@
 import Link from "next/link";
 import React from "react";
-import { GoDotFill } from "react-icons/go";
+import { FaRegFolderOpen } from "react-icons/fa";
 
 const gallery = () => {
   return (
@@ -58,40 +58,41 @@ const gallery = () => {
           </div>
         </div>
         <div className="gallery-category flx25 pl24">
-          <div className="p24 fs18 fw6 brd1 bg2 mt12 br4 bs3">
+          <div className="p24 fs18 fw6 brd1 bg2 mt12 br4">
+            <h2 className="category tac mb24 fs20 fc6 ttu">category</h2>
             <h2>
-              <Link href="#" className="category-list mb16 p12 bg1 fc1 df br4">
+              <Link href="#" className="category-list mb24 p12 bg1 fc1 df br4">
                 Photos
               </Link>
             </h2>
             <h3>
-              <Link href="#" className="category-list mb16 p12 bg1 fc1 df br4">
+              <Link href="#" className="category-list mb24 p12 bg1 fc1 df br4">
                 Archive
               </Link>
             </h3>
-            <ul className="category-item fs16 fw5 ml16">
-              <li className="category-item-list df mb12">
+            <ul className="category-item fs16 fw5 ml24">
+              <li className="category-item-list df mb16 tdhu">
                 <Link href="#" className="">
-                  <GoDotFill className="fs14 fc6 mr8" />
-                  2021
+                  <FaRegFolderOpen className="fs14 fc6 mr8" />
+                  2024
                 </Link>
               </li>
-              <li className="category-item-list df mb12">
+              <li className="category-item-list df mb16 tdhu">
                 <Link href="#" className="">
-                  <GoDotFill className="fs14 fc6 mr8" />
-                  2022
-                </Link>
-              </li>
-              <li className="category-item-list df mb12">
-                <Link href="#" className="">
-                  <GoDotFill className="fs14 fc6 mr8" />
+                  <FaRegFolderOpen className="fs14 fc6 mr8" />
                   2023
                 </Link>
               </li>
-              <li className="category-item-list df mb12">
+              <li className="category-item-list df mb16 tdhu">
                 <Link href="#" className="">
-                  <GoDotFill className="fs14 fc6 mr8" />
-                  2024
+                  <FaRegFolderOpen className="fs14 fc6 mr8" />
+                  2022
+                </Link>
+              </li>
+              <li className="category-item-list df mb16 tdhu">
+                <Link href="#" className="">
+                  <FaRegFolderOpen className="fs14 fc6 mr8" />
+                  2021
                 </Link>
               </li>
             </ul>

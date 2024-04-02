@@ -14,6 +14,7 @@ import EnvironmentalCount from "@/component/EnvironmentalCount";
 import MovementSection from "@/component/MovementSection";
 import Happening from "@/component/Happening";
 import Calender from "@/component/Calender";
+import Events from "@/component/Events";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -35,6 +36,7 @@ export default function Home() {
           <Hero />
           <Elementor />
           <CampaigningInto />
+          <Events />
           <Wwd />
           <OurApproach />
           <BePartOfChange />
