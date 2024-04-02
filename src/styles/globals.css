@@ -344,7 +344,7 @@ table {
 }
 
 .bg-img-01 {
-  background-image: url(../../public/images/keep-it-up-bg-img.jpg);
+  background-image: url(../../public/images/event.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -1447,8 +1447,7 @@ table {
   background-position: center center;
 }
 .banner:after,
-.keep-it-up:after,
-.events:after {
+.keep-it-up:after {
   top: 0px;
   bottom: 0px;
   width: 100%;
