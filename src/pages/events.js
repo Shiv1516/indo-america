@@ -152,41 +152,6 @@ const events = () => {
 
       <section className="events bg5 ptb48">
         <div className="events-section wrapper2 df aic fww ptb40 h-center">
-          {/* <div className="events-content plr24 flx50 fc1">
-            <h2 className="events-heading fs52 fw7 mb24">
-              IACF Annual Gala 2023
-            </h2>
-            <p className="events-subtext mb16 lh30">
-              Join us for our annual fundraiser "Casino Night - Play for
-              Charity" at 6:30 PM on Saturday, September 9, 2023 as we celebrate
-              over 34 years of service and support to Houston area charity
-              organizations and special needs. By pooling together our combined
-              funds we are able to make a greater impact in the lives of those
-              we reach.
-            </p>
-            <p className="events-subtext mb16 lh30">
-              This year's fundraising gala details:
-            </p>
-            <ul className="events-points ml12 mb32">
-              <li className="innner-points mb16 v-center">
-                <GoCheckCircle className="material-symbols-outlined mr8 fc5 fs24 fw5" />
-                Location: Stafford Centre, 10505 Cash Rd, Stafford, TX 77477
-              </li>
-              <li className="innner-points mb16 v-center">
-                <GoCheckCircle className="material-symbols-outlined mr8 fc5 fs24 fw5" />
-                Date: Saturday, September 9, 2023 at 6:30 PM.
-              </li>
-            </ul>
-          </div>
-          <div className="contact-us-img flx50">
-            <div className="contact-us-img-box">
-              <img
-                src="images/contact-us.jpg"
-                alt="contact-us"
-                className="w100 br8"
-              />
-            </div>
-          </div> */}
           <div class="message-heading-section tac w75 fc1">
             <h2 class="message-heading fs52 lh48 fw7 mb24">
               Experience Our Events{" "}
@@ -366,61 +331,6 @@ const events = () => {
           </div>
         </div>
       </section>
-
-      {/* <section className="ticket ptb48">
-        <div className="ticket-container wrapper2 ptb40">
-          <div className="ticket-heading-box h-center mb40">
-            <div className="ticket-heading-section tac w75">
-              <h2 className="ticket-heading fs52 lh48 fc6 fw7 mb24">
-                Individual Gala Ticket{" "}
-              </h2>
-              <p className="ticket-text lh30 fs18">
-                Secure Your Seat for the Spectacular Gala Evening.
-              </p>
-            </div>
-          </div>
-          <div className="df aisc fww">
-            <div className="ticket-card flx50 df jcc mb24">
-              <div className="ticket-cards mr24 fc6 bg6 p24 br8">
-                <h3 className="ticket-category fw7 mb12">Pearl Level - $500</h3>
-                <p className="ticket-status ml8 mb16 v-center">
-                  <VscArrowCircleRight className="mr8 fs24 fc5 lh24" />
-                  One Premium Gala Ticket
-                </p>
-                <h3 className="ticket-category fw7 mb12">
-                  General Seat - $250
-                </h3>
-                <p className="ticket-status ml8 mb16 v-center mb24">
-                  <VscArrowCircleRight className="mr8 fs24 fc5 lh24" />
-                  One General Gala Ticket
-                </p>
-                <Link href="/">
-                  <div className="supporting-btn transit2 h48 box-center br8 bg10 fc6 p32 fw7">
-                    Donate Now
-                  </div>
-                </Link>
-              </div>
-            </div>
-            <div className="ticket-card flx50 df jcc mb24">
-              <div className="ticket-cards mr24 fc6 bg6 p24 br8">
-                <h3 className="ticket-category fw7 mb12 lh24">
-                  {" "}
-                  Supporter/Table Sponsor Levels
-                </h3>
-                <p className="ticket-status ml8 mb16 v-center">
-                  <VscArrowCircleRight className="mr8 fs24 fc5" />
-                  Sponsorship Level
-                </p>
-                <Link href="/">
-                  <div className="supporting-btn transit2 h48 box-center br8 bg10 fc6 p32 fw7">
-                    Donate Now
-                  </div>
-                </Link>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section> */}
 
       <section className="support ptb48">
         <div className="support-box wrapper2 ptb40">
@@ -641,10 +551,11 @@ const events = () => {
         <div className="message-heading-box h-center ptb40">
           <div className="message-heading-section tac fc1 w75">
             <h2 className="message-heading fs52 lh48 fw7 mb24">
-              Levels of Support for Our Cause{" "}
+              Latest Events{" "}
             </h2>
             <p className="message-text lh30 fs18">
-              Explore Various Ways to Contribute to Our Mission
+              Stay updated with our latest events! Explore opportunities to
+              learn, engage, and make a difference in our community.
             </p>
           </div>
         </div>

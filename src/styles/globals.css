@@ -1625,36 +1625,6 @@ table {
 /* Event Page */
 /* Responsive at different resolution */
 @media only screen and (max-width: 1025px) {
-  /* .navbar {
-    display: none;
-    position: absolute;
-    top: 113px;
-    left: 0;
-    min-height: calc(100vh - 78px);
-    max-height: calc(100vh - 79px);
-    background-color: #14a5d1;
-    overflow: hidden;
-    overflow-y: auto;
-    flex-wrap: wrap;
-    align-items: start;
-    justify-content: start;
-    width: 100vw;
-    z-index: 100;
-  }
-  .popup-btn {
-    margin-left: 12px;
-  }
-  .nav-list {
-    flex-wrap: wrap;
-    display: block;
-  }
-  .navbar.on-nav {
-    display: block;
-  }
-  .menu-btn {
-    display: flex;
-  } */
-
   .hamburger-menu {
     display: flex;
     flex-direction: column;
@@ -1691,7 +1661,7 @@ table {
     min-height: calc(100vh - 78px);
     max-height: calc(100vh - 79px);
     flex-direction: column;
-    background-color: #008cc1;
+    background-color: #5fabcd;
     overflow: hidden;
     overflow-y: auto;
     flex-wrap: wrap;
@@ -2317,10 +2287,9 @@ table {
 .member-cards:hover .side-icon {
   display: none;
 }
-.membership-form,
-.donate-form {
+.membership-form {
   display: none;
-  z-index: 99;
+  z-index: 9999;
 }
 .open-m-form.membership-form {
   display: flex;
@@ -2336,7 +2305,7 @@ table {
 }
 .m-form {
   width: 96%;
-  max-width: 500px;
+  max-width: 550px;
   min-height: 400px;
   max-height: 96vh;
   overflow-y: auto;
