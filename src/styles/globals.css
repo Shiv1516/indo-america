@@ -343,6 +343,13 @@ table {
   background-color: #f8f8f8;
 }
 
+.bg-img-01 {
+  background-image: url(../../public/images/keep-it-up-bg-img.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
 .bg-grdnt-01 {
   background-image: linear-gradient(
     to right,
@@ -1440,7 +1447,8 @@ table {
   background-position: center center;
 }
 .banner:after,
-.keep-it-up:after {
+.keep-it-up:after,
+.events:after {
   top: 0px;
   bottom: 0px;
   width: 100%;
@@ -1450,7 +1458,16 @@ table {
     rgb(1 18 21 / 86%) 100%
   );
 }
-
+.events:after {
+  top: 0px;
+  bottom: 0px;
+  width: 100%;
+  z-index: 1;
+  background-image: linear-gradient(
+    rgb(2 0 36 / 33%) 0%,
+    rgba(1, 18, 21, 0.95) 100%
+  );
+}
 /* keep it up */
 
 /* support-our-word */
