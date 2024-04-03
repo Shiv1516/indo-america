@@ -2373,4 +2373,5 @@ table {
 }
 .membership-card:hover .members-img img {
   height: 330px;
+  transition: all 0.4s;
 }

@@ -1,5 +1,6 @@
 import React from "react";
 import { VscArrowCircleRight } from "react-icons/vsc";
+import { FaRegFolderOpen } from "react-icons/fa";
 import { GoCheckCircle } from "react-icons/go";
 import Link from "next/link";
 
@@ -85,6 +86,32 @@ const liveinhouston = () => {
                   Live in Houston
                 </Link>
               </h4>
+              <ul className="category-item fs16 fw5 ml24 mb24">
+                <li className="category-item-list df mb16 tdhu">
+                  <Link href="/gala2024" className="">
+                    <FaRegFolderOpen className="fs14 fc6 mr8" />
+                    2024
+                  </Link>
+                </li>
+                <li className="category-item-list df mb16 tdhu">
+                  <Link href="/gala2023" className="">
+                    <FaRegFolderOpen className="fs14 fc6 mr8" />
+                    2023
+                  </Link>
+                </li>
+                <li className="category-item-list df mb16 tdhu">
+                  <Link href="/gala2022" className="">
+                    <FaRegFolderOpen className="fs14 fc6 mr8" />
+                    2022
+                  </Link>
+                </li>
+                <li className="category-item-list df mb16 tdhu">
+                  <Link href="/gala2021" className="">
+                    <FaRegFolderOpen className="fs14 fc6 mr8" />
+                    2021
+                  </Link>
+                </li>
+              </ul>
             </div>
           </div>
         </div>

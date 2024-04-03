@@ -51,105 +51,6 @@ const events = () => {
         </Slider>
       </div>
 
-      <section className="donate ptb48 bg6">
-        <div className="donate-section wrapper2 ptb40">
-          <div className="donate-container df fww">
-            <div className="donate-text flx50 fc6 v-center">
-              <div className="donate-box mr24">
-                <span className="donate-text-heading fc1 bg7 fc12 ptb8 plr12 mb24 dib br4">
-                  Explore Our Events
-                </span>
-                <h2 className="donate-text-subheading fs42 fw7 lh42 mb24">
-                  Engage with Meaningful Experiences
-                </h2>
-                <p className="donate-text-subtext fw5 lh30 mb24">
-                  Discover a range of enriching events tailored to inspire,
-                  educate, and empower. Join us in making a difference today.
-                </p>
-                <Link href="https://www.paypal.com/donate?token=fQKEOQs3go0wzRLWSPxfdOfsuolpqBzG5_a0XkaxZGXqK65kmyHfDMulU5_K3C-TEXU_fuqLIHluvRXt">
-                  <div className="supporting-btn transit2 h48 box-center br8 bg8 fc1 p32 fw7">
-                    Donate Now
-                  </div>
-                </Link>
-              </div>
-            </div>
-            <div className="contact-form df fww flx50 aic pr32">
-              <div className="who-we-are-content fc6 bg2 p32 br4 bs3">
-                <h2 className="who-we-are-heading fs36 lh48 fw6 mb12 tac">
-                  Event Registration Form
-                </h2>
-                <p className="who-we-are-subtext mb24 lh30 tac">
-                  Complete the form below to register for the selected event.
-                  Secure your spot and join us for an unforgettable experience!
-                </p>
-                <div className="df fww mb16">
-                  <div className="contact-firstname flx50 mb16 pr12">
-                    <label for="/" className=" mb12 dib ml4 fw5">
-                      Name
-                      <span className="fc2">*</span>
-                    </label>
-                    <input
-                      type="text"
-                      id="name"
-                      name="name"
-                      className="first-name-box w100 br8 p16 h48 brd1"
-                      placeholder
-                      required
-                    />
-                  </div>
-                  <div className="contact-email flx50 mb16">
-                    <label for="/" className=" mb12 dib ml4 fw5">
-                      Email
-                      <span className="fc2">*</span>
-                    </label>
-                    <input
-                      type="text"
-                      id="name"
-                      name="name"
-                      className="email w100 br8 p16 h48 brd1"
-                      placeholder
-                      required
-                    />
-                  </div>
-                  <div className="contact-phone flx50 mb16 pr12">
-                    <label for="/" className=" mb12 dib ml4 fw5">
-                      Phone
-                      <span className="fc2">#</span>
-                    </label>
-                    <input
-                      type="text"
-                      id="name"
-                      name="name"
-                      className="phone w100 br8 p16 h48 brd1"
-                      placeholder
-                      required
-                    />
-                  </div>
-                  <div className="contact-subject flx50 mb16">
-                    <label for="/" className=" mb12 dib ml4 fw5">
-                      Purpose
-                    </label>
-                    <input
-                      type="text"
-                      id="name"
-                      name="name"
-                      className="subject w100 br8 p16 h48 brd1"
-                      placeholder
-                      required
-                    />
-                  </div>
-                </div>
-                <div className="flx1 p12">
-                  <button className="form-btn cp h48 br8 bg1 fc1 p32 fs18 box-center fw7 transit2">
-                    Submit
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       <section className="events bg5 ptb48">
         <div className="events-section wrapper2 df aic fww ptb40 h-center">
           <div class="message-heading-section tac w75 fc1">
@@ -270,7 +171,7 @@ const events = () => {
         </div>
       </section>
 
-      <section className="message ptb48 bg6">
+      <section className="message ptb48">
         <div className="message-container wrapper2 ptb40">
           <div className="message-heading-box h-center mb40">
             <div className="message-heading-section tac w75">
@@ -333,6 +234,105 @@ const events = () => {
                     alt="hashu-bhai-patel"
                     className="w100"
                   />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="donate ptb48 bg6">
+        <div className="donate-section wrapper2 ptb40">
+          <div className="donate-container df fww">
+            <div className="donate-text flx50 fc6 v-center">
+              <div className="donate-box mr24">
+                <span className="donate-text-heading fc1 bg7 fc12 ptb8 plr12 mb24 dib br4">
+                  Explore Our Events
+                </span>
+                <h2 className="donate-text-subheading fs42 fw7 lh42 mb24">
+                  Engage with Meaningful Experiences
+                </h2>
+                <p className="donate-text-subtext fw5 lh30 mb24">
+                  Discover a range of enriching events tailored to inspire,
+                  educate, and empower. Join us in making a difference today.
+                </p>
+                <Link href="https://www.paypal.com/donate?token=fQKEOQs3go0wzRLWSPxfdOfsuolpqBzG5_a0XkaxZGXqK65kmyHfDMulU5_K3C-TEXU_fuqLIHluvRXt">
+                  <div className="supporting-btn transit2 h48 box-center br8 bg8 fc1 p32 fw7">
+                    Donate Now
+                  </div>
+                </Link>
+              </div>
+            </div>
+            <div className="contact-form df fww flx50 aic pr32">
+              <div className="who-we-are-content fc6 bg2 p32 br4 bs3">
+                <h2 className="who-we-are-heading fs36 lh48 fw6 mb12 tac">
+                  Event Registration Form
+                </h2>
+                <p className="who-we-are-subtext mb24 lh30 tac">
+                  Complete the form below to register for the selected event.
+                  Secure your spot and join us for an unforgettable experience!
+                </p>
+                <div className="df fww mb16">
+                  <div className="contact-firstname flx50 mb16 pr12">
+                    <label for="/" className=" mb12 dib ml4 fw5">
+                      Name
+                      <span className="fc2">*</span>
+                    </label>
+                    <input
+                      type="text"
+                      id="name"
+                      name="name"
+                      className="first-name-box w100 br8 p16 h48 brd1"
+                      placeholder
+                      required
+                    />
+                  </div>
+                  <div className="contact-email flx50 mb16">
+                    <label for="/" className=" mb12 dib ml4 fw5">
+                      Email
+                      <span className="fc2">*</span>
+                    </label>
+                    <input
+                      type="text"
+                      id="name"
+                      name="name"
+                      className="email w100 br8 p16 h48 brd1"
+                      placeholder
+                      required
+                    />
+                  </div>
+                  <div className="contact-phone flx50 mb16 pr12">
+                    <label for="/" className=" mb12 dib ml4 fw5">
+                      Phone
+                      <span className="fc2">#</span>
+                    </label>
+                    <input
+                      type="text"
+                      id="name"
+                      name="name"
+                      className="phone w100 br8 p16 h48 brd1"
+                      placeholder
+                      required
+                    />
+                  </div>
+                  <div className="contact-subject flx50 mb16">
+                    <label for="/" className=" mb12 dib ml4 fw5">
+                      Purpose
+                    </label>
+                    <input
+                      type="text"
+                      id="name"
+                      name="name"
+                      className="subject w100 br8 p16 h48 brd1"
+                      placeholder
+                      required
+                    />
+                  </div>
+                </div>
+                <div className="flx1 p12">
+                  <button className="form-btn cp h48 br8 bg1 fc1 p32 fs18 box-center fw7 transit2">
+                    Submit
+                  </button>
                 </div>
               </div>
             </div>

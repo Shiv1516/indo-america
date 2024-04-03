@@ -1,6 +1,6 @@
 import React from "react";
 import { VscArrowCircleRight } from "react-icons/vsc";
-import { GoCheckCircle } from "react-icons/go";
+import { FaRegFolderOpen } from "react-icons/fa";
 import Link from "next/link";
 
 const iwalkicare = () => {
@@ -9,41 +9,99 @@ const iwalkicare = () => {
       <section className="events bg5 ptb48">
         <div className="events-section wrapper df fww ptb40">
           <div className="flx1 df fww">
-            <div className="events-content plr24 flx50 fc1">
-              <h2 className="events-heading fs42 fw7 mb24 lh48">
-                IACF Annual <span className="fc8">I Walk & I Care Event</span>
-              </h2>
-              <p className="events-subtext mb16 lh30">
-                Join us for the IACF Annual I Walk & I Care event, celebrating
-                unity and compassion. Walk with purpose, spread awareness, and
-                support impactful initiatives for a brighter future together.
-              </p>
-              <p className="events-subtext mb16 lh30">
-                This year's fundraising gala details:
-              </p>
-              <ul className="events-points ml12 mb32">
-                <li className="innner-points mb16 v-center">
-                  <GoCheckCircle className="material-symbols-outlined mr8 fc5 fs24 fw5" />
-                  Location: Stafford Centre, 10505 Cash Rd, Stafford, TX 77477
-                </li>
-                <li className="innner-points mb16 v-center">
-                  <GoCheckCircle className="material-symbols-outlined mr8 fc5 fs24 fw5" />
-                  Date: Saturday, September 9, 2023 at 6:30 PM.
-                </li>
-              </ul>
-              <Link href="https://www.paypal.com/donate?token=fQKEOQs3go0wzRLWSPxfdOfsuolpqBzG5_a0XkaxZGXqK65kmyHfDMulU5_K3C-TEXU_fuqLIHluvRXt">
-                <div className="supporting-btn transit2 h48 box-center br8 bg8 fc1 p32 fw7">
-                  Donate Now
+            <div className="donate-container df fww">
+              <div className="donate-text flx50 fc6 v-center">
+                <div className="donate-box mr24">
+                  <span className="donate-text-heading fc1 bg7 fc12 ptb8 plr12 mb24 dib br4">
+                    Explore Our Events
+                  </span>
+                  <h2 className="donate-text-subheading fs42 fw1 lh42 mb24 fc1">
+                    Engage with Meaningful Experiences
+                  </h2>
+                  <p className="donate-text-subtext fw5 lh30 mb24 fc11">
+                    Discover a range of enriching events tailored to inspire,
+                    educate, and empower. Join us in making a difference today.
+                  </p>
+                  <Link href="https://www.paypal.com/donate?token=fQKEOQs3go0wzRLWSPxfdOfsuolpqBzG5_a0XkaxZGXqK65kmyHfDMulU5_K3C-TEXU_fuqLIHluvRXt">
+                    <div className="supporting-btn transit2 h48 box-center br8 bg8 fc1 p32 fw7">
+                      Donate Now
+                    </div>
+                  </Link>
                 </div>
-              </Link>
-            </div>
-            <div className="contact-us-img flx50">
-              <div className="contact-us-img-box">
-                <img
-                  src="images/iwalk-icare.jpg"
-                  alt="iwalk-icare"
-                  className="w100 br8"
-                />
+              </div>
+              <div className="contact-form df fww flx50 aic pr32">
+                <div className="who-we-are-content fc6 bg2 p32 br4 bs3">
+                  <h2 className="who-we-are-heading fs36 lh48 fw6 mb12 tac">
+                    Event Registration Form
+                  </h2>
+                  <p className="who-we-are-subtext mb24 lh30 tac">
+                    Complete the form below to register for the selected event.
+                    Secure your spot and join us for an unforgettable
+                    experience!
+                  </p>
+                  <div className="df fww mb16">
+                    <div className="contact-firstname flx50 mb16 pr12">
+                      <label for="/" className=" mb12 dib ml4 fw5">
+                        Name
+                        <span className="fc2">*</span>
+                      </label>
+                      <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        className="first-name-box w100 br8 p16 h48 brd1"
+                        placeholder
+                        required
+                      />
+                    </div>
+                    <div className="contact-email flx50 mb16">
+                      <label for="/" className=" mb12 dib ml4 fw5">
+                        Email
+                        <span className="fc2">*</span>
+                      </label>
+                      <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        className="email w100 br8 p16 h48 brd1"
+                        placeholder
+                        required
+                      />
+                    </div>
+                    <div className="contact-phone flx50 mb16 pr12">
+                      <label for="/" className=" mb12 dib ml4 fw5">
+                        Phone
+                        <span className="fc2">#</span>
+                      </label>
+                      <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        className="phone w100 br8 p16 h48 brd1"
+                        placeholder
+                        required
+                      />
+                    </div>
+                    <div className="contact-subject flx50 mb16">
+                      <label for="/" className=" mb12 dib ml4 fw5">
+                        Purpose
+                      </label>
+                      <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        className="subject w100 br8 p16 h48 brd1"
+                        placeholder
+                        required
+                      />
+                    </div>
+                  </div>
+                  <div className="flx1 p12">
+                    <button className="form-btn cp h48 br8 bg1 fc1 p32 fs18 box-center fw7 transit2">
+                      Submit
+                    </button>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -66,6 +124,32 @@ const iwalkicare = () => {
                   I Walk & I Care
                 </Link>
               </h4>
+              <ul className="category-item fs16 fw5 ml24 mb24">
+                <li className="category-item-list df mb16 tdhu">
+                  <Link href="/gala2024" className="">
+                    <FaRegFolderOpen className="fs14 fc6 mr8" />
+                    2024
+                  </Link>
+                </li>
+                <li className="category-item-list df mb16 tdhu">
+                  <Link href="/gala2023" className="">
+                    <FaRegFolderOpen className="fs14 fc6 mr8" />
+                    2023
+                  </Link>
+                </li>
+                <li className="category-item-list df mb16 tdhu">
+                  <Link href="/gala2022" className="">
+                    <FaRegFolderOpen className="fs14 fc6 mr8" />
+                    2022
+                  </Link>
+                </li>
+                <li className="category-item-list df mb16 tdhu">
+                  <Link href="/gala2021" className="">
+                    <FaRegFolderOpen className="fs14 fc6 mr8" />
+                    2021
+                  </Link>
+                </li>
+              </ul>
               <h4>
                 <Link
                   href="/grantnight"
@@ -316,15 +400,8 @@ const iwalkicare = () => {
         <div className="event-container wrapper2 pt24">
           <div className="events-img df flx100 p12">
             <img
-              src="images/gallery/event-img-01.png"
-              alt="event-img"
-              className="w100 br4"
-            />
-          </div>
-          <div className="events-img df flx100 p12">
-            <img
-              src="images/gallery/event-img-02.png"
-              alt="event-img"
+              src="images/gallery/iacf-flyer.jpg"
+              alt="iacf-flyer"
               className="w100 br4"
             />
           </div>

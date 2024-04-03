@@ -5,7 +5,7 @@ import { FaDonate } from "react-icons/fa";
 const howyoucanhelp = () => {
   return (
     <>
-      <section className="donate ptb48 bg6">
+      <section className="donate ptb48 bg8">
         <div className="donate-section wrapper2 ptb40">
           <div className="donate-container df fww">
             <div className="donate-text flx50 fc6 v-center">
@@ -13,10 +13,10 @@ const howyoucanhelp = () => {
                 <span className="donate-text-heading fc1 bg7 fc12 ptb8 plr12 mb24 dib br4">
                   Support Our Cause
                 </span>
-                <h2 className="donate-text-subheading fs42 fw7 lh42 mb24">
+                <h2 className="donate-text-subheading fs42 fw7 lh42 mb24 fc1">
                   Make a Difference Through Donation
                 </h2>
-                <p className="donate-text-subtext fw5 lh30 mb24">
+                <p className="donate-text-subtext fw5 lh30 mb24 fc11">
                   Your contribution fuels our mission for positive change. Join
                   hands with us to empower communities, provide education,
                   healthcare, and create lasting impact. Every donation counts
@@ -77,7 +77,7 @@ const howyoucanhelp = () => {
         </div>
       </section>
 
-      <section className="spread ptb48 bg8">
+      <section className="spread ptb48 bg6">
         <div className="spread-section wrapper2 ptb48">
           <div className="spread-container df fww">
             <div className="spread-text flx50 fc6 v-center">
@@ -85,10 +85,10 @@ const howyoucanhelp = () => {
                 <span className="spread-text-heading fc1 bg7 fc12 ptb8 plr12 mb24 dib br4">
                   Empowering Change Through Awareness
                 </span>
-                <h2 className="spread-text-subheading fs42 fw7 lh42 mb24 fc1">
+                <h2 className="spread-text-subheading fs42 fw7 lh42 mb24">
                   Join Our Mission to Educate and Inspire
                 </h2>
-                <p className="spread-text-subtext fw5 lh30 mb24 fc11">
+                <p className="spread-text-subtext fw5 lh30 mb24">
                   Explore our initiatives to raise awareness on vital issues
                   like environmental sustainability, social justice, health, and
                   education. Together, we can drive positive change and create a
