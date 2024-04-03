@@ -39,8 +39,9 @@ const Events = () => {
             </div>
           </Link>
         </div>
-        <div className="events-form flx50 p24 bs3 br4 zi2 bg2">
-          <h2 className="form-title fs24 tac fw7 fc6">Event Form</h2>
+        <div className="events-form flx50 p32 bs3 br4 zi2 bg6">
+          <h2 className="form-title fs32 tac fw7 fc6 mb8">Registered Now</h2>
+          <p className="lh24 tac fc6 mb24 fw5">Join the 'I Walk & I Care'!</p>
 
           <div className="flx1 df fdc mb24">
             <label htmlFor="fullName" className="pb8">

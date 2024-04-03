@@ -98,7 +98,8 @@ const Header = () => {
               Membership
             </button>
             <Link
-              href="https://www.paypal.com/donate?token=fQKEOQs3go0wzRLWSPxfdOfsuolpqBzG5_a0XkaxZGXqK65kmyHfDMulU5_K3C-TEXU_fuqLIHluvRXt"
+              target="_blank"
+              href="https://www.paypal.com/donate?token=QFley3nGNLyCxpb0QEc9RkSzqD3kHWwrPMiCcgg7qsuvcEdVC6OYEZmeob3j5vRGmqEwynbrWclc2Gus"
               className="popup-d-btn transit2 br4 plr16 h48 fc1 cp bg1 ml32 v-center"
             >
               <FaDonate className="mr8 fs24" />

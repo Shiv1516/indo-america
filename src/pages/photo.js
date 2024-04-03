@@ -2,7 +2,7 @@ import Link from "next/link";
 import React from "react";
 import { FaRegFolderOpen } from "react-icons/fa";
 
-const gallery = () => {
+const photo = () => {
   return (
     <section className="gallery ptb40 bg6 ptb48">
       <div className="gallery-container wrapper df fww">
@@ -10,13 +10,6 @@ const gallery = () => {
           <div className="gallery-img flx33 df p12">
             <img
               src="images/gallery/gallery-img-01.jpg"
-              alt="gallery-img"
-              className="w100"
-            />
-          </div>
-          <div className="gallery-img flx33 df p12">
-            <img
-              src="images/gallery/gallery-img-02.jpg"
               alt="gallery-img"
               className="w100"
             />
@@ -102,4 +95,4 @@ const gallery = () => {
   );
 };
 
-export default gallery;
+export default photo;

@@ -178,7 +178,7 @@ const about = () => {
                     <IoIosArrowRoundForward className="side-icon pa p8 bg2 fs24 br50 fc6" />
                   </div>
                   <div className="mem-card-text p12 transit2 mt16 tac">
-                    <h2 className="mem-card-name fc6 fs18 mb8 fw6">
+                    <h2 className="mem-card-name fc6 fs18 mb8 fw7">
                       {member.name}
                     </h2>
                     <p className="mem-card-degig fs14">{member.role}</p>
@@ -221,7 +221,7 @@ const about = () => {
                     <IoIosArrowRoundForward className="side-icon pa p8 bg2 fs24 br50 fc6" />
                   </div>
                   <div className="mem-card-text p12 transit2 mt32 tac">
-                    <h2 className="mem-card-name fs18 mb8 fw6">
+                    <h2 className="mem-card-name fs18 mb8 fw7">
                       {member.name}
                     </h2>
                     <p className="mem-card-degig fs14">{member.role}</p>

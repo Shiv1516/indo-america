@@ -348,6 +348,7 @@ table {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
 }
 
 .bg-grdnt-01 {
@@ -1768,6 +1769,9 @@ table {
     flex: 0 0 50%;
     max-width: 50%;
   }
+  .membership-card {
+    height: 262px;
+  }
 }
 @media only screen and (max-width: 850px) {
   .fs52,
@@ -1807,7 +1811,7 @@ table {
   .card,
   .count-card,
   .wwa-count-card,
-  .member-cards {
+  .membership-card {
     flex: 0 0 50%;
     max-width: 50%;
   }
@@ -2126,7 +2130,7 @@ table {
   .contact-phone,
   .contact-subject,
   .ticket-card,
-  .member-cards,
+  .membership-card,
   .service-card-img,
   .service-card-text {
     flex: 0 0 100%;
@@ -2290,13 +2294,13 @@ table {
   bottom: 0;
 }
 .member-cards:hover .mem-card-text h2 {
-  color: #fff;
+  color: #197874;
 }
 .member-cards:hover .mem-card-text p {
-  color: #fff;
+  color: #197874;
 }
 .member-cards {
-  height: 335px;
+  height: 100%;
 }
 .member-cards:hover {
   padding-top: 0px;
@@ -2359,4 +2363,14 @@ table {
 .service-card-img img {
   height: 280px;
   width: 100%;
+}
+.membership-card {
+  height: 330px;
+  overflow: hidden;
+}
+.member-cards {
+  height: 100%;
+}
+.membership-card:hover .members-img img {
+  height: 330px;
 }

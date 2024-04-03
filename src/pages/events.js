@@ -287,7 +287,11 @@ const events = () => {
             <div className="provider flx50 mb24">
               <div className="provider-box mlr12 df fww ofh br8 bg12">
                 <div className="provider-img flx50 df">
-                  <img src="images/person.jpg" alt="" className="w100" />
+                  <img
+                    src="images/iach-member/pankaj-sir.jpg"
+                    alt="pankaj-sir"
+                    className="w100"
+                  />
                 </div>
                 <div className="provider-content flx50 fc6 p24">
                   <h2 className="provider-heading fs20 fw7 mb8">Pankaj Rana</h2>
@@ -324,7 +328,11 @@ const events = () => {
                   </Link>
                 </div>
                 <div className="provider-img flx50 df">
-                  <img src="images/person.jpg" alt="" className="w100" />
+                  <img
+                    src="images/iach-member/hashu-bhai-patel.jpg"
+                    alt="hashu-bhai-patel"
+                    className="w100"
+                  />
                 </div>
               </div>
             </div>
