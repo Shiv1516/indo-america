@@ -1,10 +1,11 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { RiArrowDownSLine } from "react-icons/ri";
 import { BsPersonFillAdd } from "react-icons/bs";
-import { FaDonate } from "react-icons/fa";
 import MembershipForm from "../component/MembershipForm";
 import HamburgerMenu from "../component/HamburgerMenu";
 import Link from "next/link";
+import { FaDonate } from "react-icons/fa";
+import DonateButton from "./DonateButton";
 
 const Header = () => {
   const [isMenuOpen, setMenuOpen] = useState(false);
@@ -27,10 +28,27 @@ const Header = () => {
   const closePopupM = () => {
     setIsPopupOpenM(false);
   };
+  const [isPopupOpenD, setIsPopupOpenD] = useState(false);
+
+  const openPopupD = () => {
+    setIsPopupOpenD(true);
+  };
+
+  const closePopupD = () => {
+    setIsPopupOpenD(false);
+  };
+
+  const paypalClientId =
+    "AQ9XdVRBUsAfEvwBACKHEYlmHRE2yObZzpN_s-en7CuzZkOWopdHSpf-fJrbyuRjDFnk5F80SzNpQiDX";
 
   return (
     <>
       <MembershipForm isOpen={isPopupOpenM} onClose={closePopupM} />
+      <DonateButton
+        isOpen={isPopupOpenD}
+        onClose={closePopupD}
+        clientId={paypalClientId}
+      />
       <div className="top-navbar bg5">
         <ul className="v-center wrapper df jce fc1 fw7 pr24 fs14">
           <li className="top-nab-item transit2 p16">
@@ -80,12 +98,6 @@ const Header = () => {
                   </li>
                 </ul>
               </li>
-              {/* <li className="nav-item transit2 p16 mlr4 fc-h1">
-                <Link href="/acknowledgement" className="df">
-                  Acknowledgement
-                  <RiArrowDownSLine className="material-symbols-outlined ml4 fs22" />
-                </Link>
-              </li> */}
               <li className="nav-item transit2 p16 mlr4 fc-h1 ass">
                 <Link href="/gallery">Gallery</Link>
               </li>
@@ -97,14 +109,13 @@ const Header = () => {
               <BsPersonFillAdd className="mr8 fs24" />
               Membership
             </button>
-            <Link
-              target="_blank"
-              href="https://www.paypal.com/donate?token=QFley3nGNLyCxpb0QEc9RkSzqD3kHWwrPMiCcgg7qsuvcEdVC6OYEZmeob3j5vRGmqEwynbrWclc2Gus"
+            <button
+              onClick={openPopupD}
               className="popup-d-btn transit2 br4 plr16 h48 fc1 cp bg1 ml32 v-center"
             >
               <FaDonate className="mr8 fs24" />
               Donate Now
-            </Link>
+            </button>
           </div>
         </div>
       </nav>

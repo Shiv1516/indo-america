@@ -2308,11 +2308,13 @@ table {
 .member-cards:hover .side-icon {
   display: none;
 }
-.membership-form {
+.membership-form,
+.donate-form {
   display: none;
   z-index: 9999;
 }
-.open-m-form.membership-form {
+.open-m-form.membership-form,
+.open-d-form.donate-form {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -2323,6 +2325,13 @@ table {
   align-items: center;
   justify-content: center;
   background-color: rgba(0, 0, 0, 0.88);
+}
+#paypal-button-container {
+  background: #fff;
+  min-width: 200px;
+  max-width: 500px;
+  width: 400px;
+  padding: 48px 16px 0;
 }
 .m-form {
   width: 96%;

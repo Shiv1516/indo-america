@@ -80,25 +80,25 @@ const grantnight = () => {
               </h4>
               <ul className="category-item fs16 fw5 ml24 mb24">
                 <li className="category-item-list df mb16 tdhu">
-                  <Link href="/gala2024" className="">
+                  <Link href="#" className="">
                     <FaRegFolderOpen className="fs14 fc6 mr8" />
                     2024
                   </Link>
                 </li>
                 <li className="category-item-list df mb16 tdhu">
-                  <Link href="/gala2023" className="">
+                  <Link href="#" className="">
                     <FaRegFolderOpen className="fs14 fc6 mr8" />
                     2023
                   </Link>
                 </li>
                 <li className="category-item-list df mb16 tdhu">
-                  <Link href="/gala2022" className="">
+                  <Link href="#" className="">
                     <FaRegFolderOpen className="fs14 fc6 mr8" />
                     2022
                   </Link>
                 </li>
                 <li className="category-item-list df mb16 tdhu">
-                  <Link href="/gala2021" className="">
+                  <Link href="#" className="">
                     <FaRegFolderOpen className="fs14 fc6 mr8" />
                     2021
                   </Link>
