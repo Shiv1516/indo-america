@@ -34,6 +34,16 @@ const DonateButton = ({ isOpen, onClose, clientId }) => {
   return (
     <div className={`donate-form pf t0 b0 w100 ${isOpen ? "open-d-form" : ""}`}>
       <div id="paypal-button-container" className="pr">
+        <div className="donate-logo tac fc6 mb48">
+          <img src="images/logo.png" alt="" className="mb32" />
+          <h4 className="donate-sub-heading fs18 fw6 mb16">Donate to</h4>
+          <h2 className="donate-heading fs28 fw6 lh24 mb12">
+            Indo American Charity Foundation
+          </h2>
+          <h3 className="donate-sub-heading fw6 fs18 mb48 pb48">
+            GENERAL_DONATION
+          </h3>
+        </div>
         <ImCross
           className="pa r0 t0 mr16 mt16 fs16 box-center cp"
           onClick={onClose}
