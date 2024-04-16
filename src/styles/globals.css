@@ -2384,3 +2384,13 @@ table {
   height: 330px;
   transition: all 0.4s;
 }
+
+#paypal-button-container {
+  background: #fff;
+  min-width: 200px;
+  max-width: 500px;
+  width: 400px;
+  padding: 48px 16px 0;
+  max-height: 90vh;
+  overflow-y: auto;
+}
