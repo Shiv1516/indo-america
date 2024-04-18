@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from "react";
 import Slider from "react-slick";
-
-import { fetchBannerData } from "../pages/api/bannerApi";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Link from "next/link";
@@ -10,18 +8,30 @@ const HeroSection = () => {
   const [banners, setBanners] = useState([]);
 
   useEffect(() => {
+    // Your fetchBannerData function implementation here
     const fetchData = async () => {
       const data = await fetchBannerData();
       setBanners(data);
     };
     fetchData();
   }, []);
+
   const settings = {
     dots: true,
     infinite: true,
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
+    beforeChange: (oldIndex, newIndex) => {
+      // Add a class to the slider to trigger the dissolve effect
+      const slider = document.querySelector(".slick-slider");
+      slider.classList.add("transitioning");
+    },
+    afterChange: () => {
+      // Remove the transition class after the slide change is complete
+      const slider = document.querySelector(".slick-slider");
+      slider.classList.remove("transitioning");
+    },
   };
 
   return (
@@ -32,7 +42,7 @@ const HeroSection = () => {
             <img
               src={`images/${banner.image}`}
               alt={banner.title}
-              className="w100 df"
+              className="hero-image-sec w100 df"
             />
             <div className="banner-data-wrap pa t0 b0 df jcc aie aft pr pb32 w100">
               <div className="banner-content tac pb48 zi99">
