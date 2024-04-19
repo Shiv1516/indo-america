@@ -109,21 +109,21 @@ const Header = () => {
               <BsPersonFillAdd className="mr8 fs24" />
               Membership
             </button>
-            <Link
+            {/* <Link
               href="https://www.paypal.com/ncp/payment/WQ9YGPQSPFNXN"
               target="_blank"
               className="popup-d-btn transit2 br4 plr16 h48 fc1 cp bg1 ml32 v-center"
             >
               <FaDonate className="mr8 fs24" />
               Donate Now
-            </Link>
-            {/* <button
+            </Link> */}
+            <button
               onClick={openPopupD}
               className="popup-d-btn transit2 br4 plr16 h48 fc1 cp bg1 ml32 v-center"
             >
               <FaDonate className="mr8 fs24" />
               Donate Now
-            </button> */}
+            </button>
           </div>
         </div>
       </nav>
