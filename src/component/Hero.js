@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from "react";
-import Slider from "react-slick";
+import React, { useState, useEffect, useRef } from "react";
+import $ from "jquery";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Link from "next/link";
@@ -33,28 +33,41 @@ const banners = [
     buttonLink: "/",
   },
 ];
+
 const HeroSection = () => {
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    beforeChange: (oldIndex, newIndex) => {
-      // Add a class to the slider to trigger the dissolve effect
-      const slider = document.querySelector(".slick-slider");
-      slider.classList.add("transitioning");
-    },
-    afterChange: () => {
-      // Remove the transition class after the slide change is complete
-      const slider = document.querySelector(".slick-slider");
-      slider.classList.remove("transitioning");
-    },
-  };
+  const sliderRef = useRef(null);
+
+  useEffect(() => {
+    let slickImported = false;
+    if (typeof window !== "undefined" && !slickImported) {
+      import("slick-carousel").then(() => {
+        slickImported = true;
+      });
+    }
+  }, []);
+
+  useEffect(() => {
+    if (banners.length > 0 && sliderRef.current && $.fn.slick) {
+      const $slider = $(sliderRef.current);
+      $slider.slick({
+        dots: true,
+        infinite: true,
+        speed: 1000,
+        fade: true,
+        cssEase: "linear",
+        autoplay: true,
+        autoplaySpeed: 5000,
+      });
+
+      return () => {
+        $slider.slick("unslick");
+      };
+    }
+  }, [banners]);
 
   return (
     <div className="hero-section">
-      <Slider {...settings}>
+      <div className="slider df" ref={sliderRef}>
         {banners.map((banner, index) => (
           <div className="banner aft pr" key={index}>
             <img
@@ -82,7 +95,7 @@ const HeroSection = () => {
             </div>
           </div>
         ))}
-      </Slider>
+      </div>
     </div>
   );
 };

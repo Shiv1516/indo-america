@@ -1623,6 +1623,7 @@ table {
   min-width: 80px;
   height: 80px;
 }
+
 .hero-section .slick-prev,
 .about-hero-section .slick-prev {
   left: 10px;
@@ -1639,6 +1640,20 @@ table {
 }
 .hero-section .slick-list {
   height: 100%;
+}
+.hero-section .slick-dotted.slick-slider {
+  margin-bottom: 0;
+}
+.hero-section .slick-dots li button:before {
+  opacity: 0.6;
+  color: #dde3e4;
+}
+.hero-section .slick-dots li.slick-active button:before {
+  opacity: 0.75;
+  color: #32e0ff;
+}
+.hero-section .slick-dots {
+  bottom: 16px;
 }
 /* Event Page */
 
