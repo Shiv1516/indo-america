@@ -1,6 +1,43 @@
 import React from "react";
 import Slider from "react-slick";
-import calendarData from "../data/calenderData.json";
+
+const calendarData = [
+  {
+    title: "Walkathon Membership Drive",
+    date: "April 13 or 20",
+    description:
+      "Join our Walkathon Membership Drive and take strides toward a healthier, more active lifestyle. Embrace fitness with our community!",
+    icon: "images/svg-icon/membership-icon.svg",
+  },
+  {
+    title: "Scholarship",
+    date: "May 10",
+    description:
+      "Apply for our Scholarship program and unlock opportunities for academic excellence. Invest in your future with our support and pave the way to success.",
+    icon: "images/svg-icon/scholarship-icon.svg",
+  },
+  {
+    title: "Donor Appreciation",
+    date: "June 15",
+    description:
+      "Grateful for the generous donors whose support fuels our mission and brings positive change to communities, we express our heartfelt thanks.",
+    icon: "images/svg-icon/donor-icon.svg",
+  },
+  {
+    title: "Grants",
+    date: "Aug 10",
+    description:
+      "Empowering initiatives and fostering innovation through financial grants that drive positive impact and sustainable change in communities.",
+    icon: "images/svg-icon/grants-icon.svg",
+  },
+  {
+    title: "Gala",
+    date: "Sept 7 or 14",
+    description:
+      "Elevate your impact: Join our prestigious Gala event, celebrating philanthropy and community support, to make a difference in empowering positive change.",
+    icon: "images/svg-icon/gala-icon.svg",
+  },
+];
 
 const Calender = () => {
   const sliderSettings = {

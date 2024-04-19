@@ -2,21 +2,24 @@ import { FaArrowRightLong } from "react-icons/fa6";
 import React, { useState, useEffect } from "react";
 import Slider from "react-slick";
 import { VscArrowCircleRight } from "react-icons/vsc";
-import { fetchBannerData } from "../pages/api/aboutBanner.js";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Link from "next/link";
 
-const events = () => {
-  const [banners, setBanners] = useState([]);
+const banners = [
+  {
+    image: "events-img-01.png",
+    title: "Events",
+    subtitle: "Donor Appreciation",
+  },
+  {
+    image: "events-img-02.png",
+    title: "Events",
+    subtitle: "IACF Scholarshiop 2023",
+  },
+];
 
-  useEffect(() => {
-    const fetchData = async () => {
-      const data = await fetchBannerData();
-      setBanners(data);
-    };
-    fetchData();
-  }, []);
+const events = () => {
   const settings = {
     dots: true,
     infinite: true,

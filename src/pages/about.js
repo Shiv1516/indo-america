@@ -1,8 +1,145 @@
 import Link from "next/link";
 import React from "react";
 import { IoIosArrowRoundForward } from "react-icons/io";
-import membersData from "../data/membersData.json";
-import advoiserData from "../data/advoiserData.json";
+
+const advoiserData = [
+  {
+    id: 1,
+    name: "Ramesh Cherivirala",
+    role: "Advisor",
+    image: "/images/iach-member/ramesh-cheru.jpg",
+    alt: "ramesh-cheru",
+  },
+  {
+    id: 2,
+    name: "Prem Cholia",
+    role: "Advisor",
+    image: "/images/iach-member/person.jpg",
+    alt: "person",
+  },
+  {
+    id: 3,
+    name: "Kamala Raghavan",
+    role: "Advisor",
+    image: "/images/iach-member/person.jpg",
+    alt: "person",
+  },
+  {
+    id: 4,
+    name: "Nanda Vura",
+    role: "Advisor",
+    image: "/images/iach-member/nanda-varu.jpg",
+    alt: "nanda-varu",
+  },
+  {
+    id: 5,
+    name: "Mahesh Wadhwa",
+    role: "Advisor",
+    image: "/images/iach-member/mahesh-vadhwa.jpg",
+    alt: "mahesh-vadhwa",
+  },
+  {
+    id: 6,
+    name: "Venkat Iyer",
+    role: "Advisor",
+    image: "/images/iach-member/vanket-lyer.jpg",
+    alt: "vanket-lyer",
+  },
+  {
+    id: 7,
+    name: "Dr Sushovan Guha",
+    role: "Advisor",
+    image: "/images/iach-member/person.jpg",
+    alt: "person",
+  },
+  {
+    id: 8,
+    name: "Ellankil Joseph",
+    role: "Advisor",
+    image: "/images/iach-member/person.jpg",
+    alt: "person",
+  },
+];
+
+const membersData = [
+  {
+    id: 1,
+    name: "Pankaj Rana",
+    role: "President",
+    image: "/images/iach-member/pankaj-sir.jpg",
+    alt: "pankaj-sir",
+  },
+  {
+    id: 2,
+    name: "Hasu D Patel",
+    role: "President-Elect",
+    image: "/images/iach-member/hashu-bhai-patel.jpg",
+    alt: "hashu-bhai-patel",
+  },
+  {
+    id: 3,
+    name: "Rosh Rajan",
+    role: "Secretary",
+    image: "/images/iach-member/rosh-rajan.jpg",
+    alt: "rosh-rajan",
+  },
+  {
+    id: 4,
+    name: "Dr Prasun Jallal",
+    role: "Treasurer",
+    image: "/images/iach-member/person.jpg",
+    alt: "person",
+  },
+  {
+    id: 5,
+    name: "Venkat Bontha",
+    role: "Communications Directorr",
+    image: "/images/iach-member/person.jpg",
+    alt: "person.jpg",
+  },
+  {
+    id: 6,
+    name: "Rajesh Dikonda",
+    role: "Past President",
+    image: "/images/iach-member/rajesh-sir.jpg",
+    alt: "rajesh-sir",
+  },
+  {
+    id: 7,
+    name: "Shobana Muratee",
+    role: "Director",
+    image: "/images/iach-member/sobhna-murati.jpg",
+    alt: "sobhna-murati",
+  },
+  {
+    id: 8,
+    name: "Shephali Kadia",
+    role: "Director",
+    image: "/images/iach-member/sefali-kandia.jpg",
+    alt: "sefali-kandia",
+  },
+  {
+    id: 9,
+    name: "Babu Thomas",
+    role: "Director",
+    image: "/images/iach-member/babu-thomas.jpg",
+    alt: "babu-thomas",
+  },
+  {
+    id: 10,
+    name: "Ven Bontha",
+    role: "Director",
+    image: "/images/iach-member/ven-bontha.jpg",
+    alt: "ven-bontha",
+  },
+  {
+    id: 11,
+    name: "Ramesh Maddi",
+    role: "Director",
+    image: "/images/iach-member/ramesh-maddi.jpg",
+    alt: "ramesh-maddi",
+  },
+];
 
 const about = () => {
   return (

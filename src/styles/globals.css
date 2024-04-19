@@ -1641,6 +1641,248 @@ table {
   height: 100%;
 }
 /* Event Page */
+
+.banner {
+  position: relative;
+  width: 100%;
+  height: 45vw; /* Adjust as needed for your hero section height */
+  overflow: hidden;
+}
+
+.blink,
+.blink:after,
+.blink:before {
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.blink:after,
+.blink:before {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #c8af31;
+  opacity: 0;
+}
+
+.blink:before {
+  -webkit-transform: scale(2);
+  transform: scale(4);
+  -webkit-animation: blink 1.6s linear infinite;
+  animation: blink 1.6s linear infinite;
+}
+
+.blink:after {
+  -webkit-animation: blink 1.6s linear 1.2s infinite;
+  animation: blink 1.6s linear 1.2s infinite;
+}
+
+@-webkit-keyframes blink {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(2);
+    transform: scale(2);
+  }
+
+  33.33333% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+  to {
+    opacity: 0;
+    -webkit-transform: scale(4);
+    transform: scale(4);
+  }
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(2);
+    transform: scale(2);
+  }
+
+  33.33333% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+  to {
+    opacity: 0;
+    -webkit-transform: scale(0.4);
+    transform: scale(0.4);
+  }
+}
+.member-img {
+  height: 180px;
+  width: 180px;
+  border-radius: 50%;
+}
+.member-cards:hover .member-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 0px;
+}
+.side-icon {
+  right: 24%;
+  top: 38%;
+}
+.member-cards:hover .mem-card-text {
+  transform: translateY(-20px);
+  position: absolute;
+  z-index: 99;
+  bottom: 0;
+}
+.member-cards:hover .mem-card-text h2 {
+  color: #197874;
+}
+.member-cards:hover .mem-card-text p {
+  color: #197874;
+}
+.member-cards {
+  height: 100%;
+}
+.member-cards:hover {
+  padding-top: 0px;
+}
+.member-cards:hover .side-icon {
+  display: none;
+}
+.membership-form,
+.donate-form {
+  display: none;
+  z-index: 9999;
+}
+.open-m-form.membership-form,
+.open-d-form.donate-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.88);
+}
+.open-d-form.donate-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.88);
+}
+#paypal-button-container {
+  background: #fff;
+  min-width: 200px;
+  max-width: 500px;
+  width: 400px;
+  padding: 48px 16px 0;
+  border-radius: 4px;
+  color: #171616;
+}
+.m-form {
+  width: 96%;
+  max-width: 550px;
+  min-height: 400px;
+  max-height: 96vh;
+  overflow-y: auto;
+}
+.m-form label:not(.v-center) {
+  display: block;
+  margin-bottom: 8px;
+  margin-top: 24px;
+}
+.m-form input:not(.checkbox-m-form) {
+  display: block;
+  width: 100%;
+  height: 40px;
+  border: 1px solid #e1e1e1;
+  border-radius: 2px;
+  padding: 0 24px;
+}
+.m-form textarea {
+  height: 80px;
+  resize: none;
+  border: 1px solid #e1e1e1;
+  border-radius: 2px;
+  padding: 0 24px;
+}
+.m-form select {
+  height: 40px;
+  width: 100%;
+  border: 1px solid #e1e1e1;
+  border-radius: 2px;
+  padding: 0 8px;
+  font-size: 14px;
+  color: #4d4b4b;
+}
+.service-card-img img {
+  height: 280px;
+  width: 100%;
+}
+.membership-card {
+  height: 330px;
+  overflow: hidden;
+}
+.member-cards {
+  height: 100%;
+}
+.membership-card:hover .members-img img {
+  height: 330px;
+  transition: all 0.4s;
+}
+
+#paypal-button-container {
+  background: #fff;
+  min-width: 200px;
+  max-width: 550px;
+  width: 600px;
+  padding: 48px 16px 0;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+.donate-logo img {
+  width: 200px;
+}
+.donate-logo {
+  width: 100%;
+  align-items: center;
+}
+
+.css-1kggvrj-col {
+  border: 1px solid #f2ecec;
+  padding: 32px;
+  max-width: 550px;
+  width: 500px;
+  min-width: 550px;
+  border-radius: 4px;
+}
+
+.hero-image-sec {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  animation: zoomIn 10s ease infinite alternate;
+}
+@keyframes zoomIn {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.3); /* Adjust zoom level (1.1) as needed */
+  }
+}
+
+.slick-slide {
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+/* Show the active slide with a dissolve effect */
+.slick-active {
+  opacity: 1;
+}
 /* Responsive at different resolution */
 @media only screen and (max-width: 1025px) {
   .hamburger-menu {
@@ -2078,6 +2320,12 @@ table {
     height: 400px;
     object-fit: cover;
   }
+  .banner {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+  }
   .hero-content,
   .need-help-ocean-heading,
   .supporting-heading,
@@ -2204,243 +2452,4 @@ table {
   .wwd-cards {
     height: 250px;
   }
-}
-.blink,
-.blink:after,
-.blink:before {
-  border-radius: 50%;
-  overflow: hidden;
-}
-
-.blink:after,
-.blink:before {
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: #c8af31;
-  opacity: 0;
-}
-
-.blink:before {
-  -webkit-transform: scale(2);
-  transform: scale(4);
-  -webkit-animation: blink 1.6s linear infinite;
-  animation: blink 1.6s linear infinite;
-}
-
-.blink:after {
-  -webkit-animation: blink 1.6s linear 1.2s infinite;
-  animation: blink 1.6s linear 1.2s infinite;
-}
-
-@-webkit-keyframes blink {
-  0% {
-    opacity: 0;
-    -webkit-transform: scale(2);
-    transform: scale(2);
-  }
-
-  33.33333% {
-    opacity: 1;
-    -webkit-transform: scale(1);
-    transform: scale(1);
-  }
-
-  to {
-    opacity: 0;
-    -webkit-transform: scale(4);
-    transform: scale(4);
-  }
-}
-
-@keyframes blink {
-  0% {
-    opacity: 0;
-    -webkit-transform: scale(2);
-    transform: scale(2);
-  }
-
-  33.33333% {
-    opacity: 1;
-    -webkit-transform: scale(1);
-    transform: scale(1);
-  }
-
-  to {
-    opacity: 0;
-    -webkit-transform: scale(0.4);
-    transform: scale(0.4);
-  }
-}
-.member-img {
-  height: 180px;
-  width: 180px;
-  border-radius: 50%;
-}
-.member-cards:hover .member-img {
-  width: 100%;
-  height: 100%;
-  border-radius: 0px;
-}
-.side-icon {
-  right: 24%;
-  top: 38%;
-}
-.member-cards:hover .mem-card-text {
-  transform: translateY(-20px);
-  position: absolute;
-  z-index: 99;
-  bottom: 0;
-}
-.member-cards:hover .mem-card-text h2 {
-  color: #197874;
-}
-.member-cards:hover .mem-card-text p {
-  color: #197874;
-}
-.member-cards {
-  height: 100%;
-}
-.member-cards:hover {
-  padding-top: 0px;
-}
-.member-cards:hover .side-icon {
-  display: none;
-}
-.membership-form,
-.donate-form {
-  display: none;
-  z-index: 9999;
-}
-.open-m-form.membership-form,
-.open-d-form.donate-form {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: rgba(0, 0, 0, 0.88);
-}
-.open-d-form.donate-form {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: rgba(0, 0, 0, 0.88);
-}
-#paypal-button-container {
-  background: #fff;
-  min-width: 200px;
-  max-width: 500px;
-  width: 400px;
-  padding: 48px 16px 0;
-  border-radius: 4px;
-  color: #171616;
-}
-.m-form {
-  width: 96%;
-  max-width: 550px;
-  min-height: 400px;
-  max-height: 96vh;
-  overflow-y: auto;
-}
-.m-form label:not(.v-center) {
-  display: block;
-  margin-bottom: 8px;
-  margin-top: 24px;
-}
-.m-form input:not(.checkbox-m-form) {
-  display: block;
-  width: 100%;
-  height: 40px;
-  border: 1px solid #e1e1e1;
-  border-radius: 2px;
-  padding: 0 24px;
-}
-.m-form textarea {
-  height: 80px;
-  resize: none;
-  border: 1px solid #e1e1e1;
-  border-radius: 2px;
-  padding: 0 24px;
-}
-.m-form select {
-  height: 40px;
-  width: 100%;
-  border: 1px solid #e1e1e1;
-  border-radius: 2px;
-  padding: 0 8px;
-  font-size: 14px;
-  color: #4d4b4b;
-}
-.service-card-img img {
-  height: 280px;
-  width: 100%;
-}
-.membership-card {
-  height: 330px;
-  overflow: hidden;
-}
-.member-cards {
-  height: 100%;
-}
-.membership-card:hover .members-img img {
-  height: 330px;
-  transition: all 0.4s;
-}
-
-#paypal-button-container {
-  background: #fff;
-  min-width: 200px;
-  max-width: 550px;
-  width: 600px;
-  padding: 48px 16px 0;
-  max-height: 90vh;
-  overflow-y: auto;
-}
-.donate-logo img {
-  width: 200px;
-}
-.donate-logo {
-  width: 100%;
-  align-items: center;
-}
-
-.css-1kggvrj-col {
-  border: 1px solid #f2ecec;
-  padding: 32px;
-  max-width: 550px;
-  width: 500px;
-  min-width: 550px;
-  border-radius: 4px;
-}
-.banner {
-  position: relative;
-  width: 100%;
-  height: 45vw; /* Adjust as needed for your hero section height */
-  overflow: hidden;
-}
-.hero-image-sec {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: auto;
-  animation: zoomIn 14s ease infinite alternate;
-}
-@keyframes zoomIn {
-  0% {
-    transform: scale(1);
-  }
-  100% {
-    transform: scale(1.2); /* Adjust zoom level (1.1) as needed */
-  }
-}
-
-.slick-slide {
-  opacity: 0;
-  transition: opacity 0.5s ease;
-}
-
-/* Show the active slide with a dissolve effect */
-.slick-active {
-  opacity: 1;
 }

@@ -1,22 +1,39 @@
 import React, { useState, useEffect } from "react";
 import Slider from "react-slick";
-import { fetchBannerData } from "../pages/api/bannerApi";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Link from "next/link";
 
+const banners = [
+  {
+    image: "banner-01.jpg",
+    title: "Elevating Lives, Enriching Communities:",
+    subtitle: "Our Commitment to Greater Houston Communities",
+    description:
+      "Empowering Greater Houston Communities through education, family support, welfare, and healthcare since 1988.",
+    buttonText: "Learn More",
+    buttonLink: "/",
+  },
+  {
+    image: "banner-02.jpg",
+    title: "Transforming Lives, Enriching Futures: ",
+    subtitle: "Scholarships Empowering Tomorrow's Leaders.",
+    description:
+      "Empowering future leaders of greater Huston ISDs with $50k in scholarships.",
+    buttonText: "Learn More",
+    buttonLink: "/",
+  },
+  {
+    image: "banner-03.jpg",
+    title: "Empowering Initiatives:",
+    subtitle: "Grants for Emerging NGOs Fueling Change.",
+    description:
+      "Fostering progress through grants to small and startup NGOs, igniting community-driven impact.",
+    buttonText: "Learn More",
+    buttonLink: "/",
+  },
+];
 const HeroSection = () => {
-  const [banners, setBanners] = useState([]);
-
-  useEffect(() => {
-    // Your fetchBannerData function implementation here
-    const fetchData = async () => {
-      const data = await fetchBannerData();
-      setBanners(data);
-    };
-    fetchData();
-  }, []);
-
   const settings = {
     dots: true,
     infinite: true,
