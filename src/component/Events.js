@@ -8,9 +8,9 @@ const Events = () => {
   return (
     <section className="events ptb48 aft pr bg-img-01">
       <div className="events-container wrapper2 df fww aic ptb40">
-        <div className="events-contents flx50 pr32 zi2 fc1">
+        <div className="events-contents flx50 plr24 zi2 fc1">
           <h2 className="events-heading fs42 fw7 lh48 mb24 ff2">
-            I WALK - I CARE
+            I WALK & I CARE
           </h2>
           <p className="lh24 mb16">
             Celebrating 25 years of partnership with Indian Doctors Charity
@@ -40,7 +40,7 @@ const Events = () => {
           </Link>
         </div>
         <div className="events-form flx50 p32 bs3 br4 zi2 bg6">
-          <h2 className="form-title fs32 tac fw7 fc6 mb8">Registered Now</h2>
+          <h2 className="form-title fs32 tac fw7 fc6 mb8">Register Now</h2>
           <p className="lh24 tac fc6 mb24 fw5">Join the 'I Walk & I Care'!</p>
 
           <div className="flx1 df fdc mb24">

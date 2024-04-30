@@ -10,7 +10,7 @@ const banners = [
     title: "Elevating Lives, Enriching Communities:",
     subtitle: "Our Commitment to Greater Houston Communities",
     description:
-      "Empowering Greater Houston Communities through education, family support, welfare, and healthcare since 1988.",
+      "Empowering Greater Houston Communities through education, family support, wellfare, and healthcare since 1988.",
     buttonText: "Learn More",
     buttonLink: "/",
   },
