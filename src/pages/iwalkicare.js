@@ -121,7 +121,7 @@ const iwalkicare = () => {
                   href="/iwalkicare"
                   className="category-list mb24 p12 bg1 fc1 df br4"
                 >
-                  I Walk & I Care
+                  I WALK & We CARE
                 </Link>
               </h4>
               <ul className="category-item fs16 fw5 ml24 mb24">
@@ -155,7 +155,7 @@ const iwalkicare = () => {
                   href="/grantnight"
                   className="category-list mb24 p12 bg1 fc1 df br4"
                 >
-                  Grant Night
+                  Event Night
                 </Link>
               </h4>
               <h4>

@@ -12,7 +12,7 @@ const grantnight = () => {
           <div className="flx1 df fww">
             <div className="events-content plr24 flx50 fc1">
               <h2 className="events-heading fs42 lh48 fw7 mb24">
-                IACF Annual <span className="fc8"> Grant Night</span>
+                IACF Annual <span className="fc8"> Event Night</span>
               </h2>
               <p className="events-subtext mb16 lh30">
                 Join us for our annual fundraiser "Casino Night - Play for
@@ -67,7 +67,7 @@ const grantnight = () => {
                   href="/iwalkicare"
                   className="category-list mb24 p12 bg1 fc1 df br4"
                 >
-                  I Walk & I Care
+                  I WALK & We CARE
                 </Link>
               </h4>
               <h4>
@@ -75,7 +75,7 @@ const grantnight = () => {
                   href="/grantnight"
                   className="category-list mb24 p12 bg1 fc1 df br4"
                 >
-                  Grant Night
+                  Event Night
                 </Link>
               </h4>
               <ul className="category-item fs16 fw5 ml24 mb24">

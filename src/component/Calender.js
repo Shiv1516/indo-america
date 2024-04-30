@@ -3,10 +3,10 @@ import Slider from "react-slick";
 
 const calendarData = [
   {
-    title: "Walkathon Membership Drive",
+    title: "Walkathon Drive",
     date: "April 13 or 20",
     description:
-      "Join our Walkathon Membership Drive and take strides toward a healthier, more active lifestyle. Embrace fitness with our community!",
+      "Join our Walkathon Drive and take strides toward a healthier, more active lifestyle. Embrace fitness with our community!",
     icon: "images/svg-icon/membership-icon.svg",
   },
   {

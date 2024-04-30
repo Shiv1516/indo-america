@@ -88,7 +88,7 @@ const CampaigningInto = () => {
           <p className="campaiging-subtext lh24">
             Transforming lives in Greater Houston through{" "}
             <span className="fw7 fs18 ff2 fc2">EFGH -</span> education, family,
-            general wellfare, and healthcare.{" "}
+            general welfare, and healthcare.{" "}
             <Link href="/" className="ff2 fw7 fc2 tdhu">
               Join us in making a difference
             </Link>
@@ -103,10 +103,6 @@ const CampaigningInto = () => {
             <li className="campaiging-icon v-center mb12">
               <MdOutlineRadioButtonChecked className="mr8 fc5 fs28 fw5" />
               Support education through scholarships and STEM programs.
-            </li>
-            <li className="campaiging-icon v-center mb12">
-              <MdOutlineRadioButtonChecked className="mr8 fc5 fs28 fw5" />
-              Aid abused women, children, and provide healthcare services.{" "}
             </li>
             <li className="campaiging-icon v-center mb12">
               <MdOutlineRadioButtonChecked className=" mr8 fc5 fs28 fw5" />

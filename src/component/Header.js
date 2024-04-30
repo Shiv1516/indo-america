@@ -88,10 +88,10 @@ const Header = () => {
                     <Link href="/gala">Gala</Link>
                   </li>
                   <li className="nav-item-dd transit2 p16 brd-b2 fc-h1">
-                    <Link href="/iwalkicare">I Walk & I Care</Link>
+                    <Link href="/iwalkicare">I WALK & We CARE</Link>
                   </li>
                   <li className="nav-item-dd transit2 p16 brd-b2 fc-h1">
-                    <Link href="/grantnight">Grant Night</Link>
+                    <Link href="/grantnight">Event Night</Link>
                   </li>
                   <li className="nav-item-dd transit2 p16 brd-b2 fc-h1">
                     <Link href="/liveinhouston">Live in Houston</Link>

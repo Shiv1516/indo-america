@@ -82,8 +82,7 @@ const Footer = () => {
         <div className="botom-footer ptb24 fc11 pt40 fc12">
           Indo-America Charity Foundation
           <span className="mlr8">
-            ©2024 - All Rights Reserved - Powerd by{" "}
-            <a href="https://aajux.com/">AAJUX</a> .
+            ©2024 - All Rights Reserved - Powerd by Genesis .
           </span>
         </div>
       </div>
