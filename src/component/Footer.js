@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
@@ -12,9 +11,9 @@ const Footer = () => {
               <img src="images/logo.png" alt="logo"></img>
             </Link>
             <p className="footer-text ptb32 lh30 fs18">
-              We connect nonprofits, donors, and companies in America and India.
-              We help fellow nonprofits access the funding, tools, training, and
-              support they need to serve their communities.
+              We connect non-profits, donors & companies in the Greater Houston
+              Community. We help other NGOs with resources & support they need
+              to serve their communities.
             </p>
             <h3 className="footer-form mb32 fw7 fs20">
               Sign Up For Our Newsletter ​*
