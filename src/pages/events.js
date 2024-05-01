@@ -99,7 +99,7 @@ const events = () => {
                 </div>
                 <div className="service-card-text p16 ma flx50">
                   <h3 className="card-heading ff2 fs20 fc6 fw6 mb16">
-                    I WALK & We CARE
+                    We WALK - We CARE
                   </h3>
                   <p className="card-subtext lh24 mb16">
                     Participate in 'I Walk - I Care' event, uniting for health

@@ -138,7 +138,7 @@ const Wwd = () => {
                 />
               </div>
               <h4 className="wwe-card-text transit2 pa fw7 fs22 cp lh30 tac w75 zi3">
-                <span className="fc9">General Wellfare</span>
+                <span className="fc9">General Welfare</span>
               </h4>
               <Link
                 href="/"

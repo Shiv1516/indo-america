@@ -2053,6 +2053,30 @@ table {
   .box-text {
     display: none;
   }
+  .fifth-circlebox:hover .box-text,
+  .sixth-circlebox:hover .box-text,
+  .seventh-circlebox:hover .box-text,
+  .second-circlebox:hover .box-text,
+  .first-circlebox:hover .box-text,
+  .third-circlebox:hover .box-text,
+  .fourth-circlebox:hover .box-text {
+    display: flex;
+    transition: all 0.05s;
+    position: relative;
+    z-index: 999999;
+  }
+  .fifth-circlebox:hover .circlebox,
+  .sixth-circlebox:hover .circlebox,
+  .seventh-circlebox:hover .circlebox,
+  .second-circlebox:hover .circlebox,
+  .first-circlebox:hover .circlebox,
+  .third-circlebox:hover .circlebox,
+  .fourth-circlebox:hover .circlebox {
+    display: none;
+  }
+  .box-text {
+    font-size: 12px;
+  }
   .movement {
     font-size: 32px;
     line-height: 40px;

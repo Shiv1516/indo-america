@@ -93,7 +93,7 @@ const gala = () => {
                   href="/iwalkicare"
                   className="category-list mb24 p12 bg1 fc1 df br4"
                 >
-                  I WALK & We CARE
+                  We WALK - We CARE
                 </Link>
               </h4>
               <h4>

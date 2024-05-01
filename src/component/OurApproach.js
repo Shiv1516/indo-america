@@ -21,13 +21,13 @@ const OurApproach = () => {
         </div>
         <div className="sun-art pr mt40 zi99">
           <div className="firsh-circle circle transit2 pa">
-            <div className="first-circlebox df zi1">
+            <div className="first-circlebox df zi99">
               <span className="circlebox df mr8 cp"></span>
               <p className="box-text fc1">Gather Media Support</p>
             </div>
           </div>
           <div className="second-circle circle transit2 pa">
-            <div className="second-circlebox df zi1">
+            <div className="second-circlebox df zi99">
               <span className="circlebox df mr8 cp"></span>
               <p className="box-text fc1">
                 Mobilize Donor
@@ -36,13 +36,13 @@ const OurApproach = () => {
             </div>
           </div>
           <div className="third-circle circle transit2 pa">
-            <div className="third-circlebox df zi1">
+            <div className="third-circlebox df zi99">
               <span className="circlebox df mr8 cp"></span>
               <p className="box-text fc1">Engage Volunteers</p>
             </div>
           </div>
           <div className="fourth-circle circle transit2 pa">
-            <div className="fourth-circlebox df zi1">
+            <div className="fourth-circlebox df zi99">
               <span className="circlebox df mr8 cp"></span>
               <p className="box-text fc1">
                 Inspire
@@ -52,13 +52,13 @@ const OurApproach = () => {
             </div>
           </div>
           <div className="fifth-circle circle transit2 pa">
-            <div className="fifth-circlebox df zi1">
+            <div className="fifth-circlebox df zi99">
               <span className="circlebox df mr8 cp"></span>
               <p className="box-text fc1">Create Awareness</p>
             </div>
           </div>
           <div className="sixth-circle circle transit2 pa">
-            <div className="sixth-circlebox df zi1">
+            <div className="sixth-circlebox df zi99">
               <span className="circlebox blink pr aft bef df mr8 cp"></span>
               <p className="box-text fc1">
                 Partner With
@@ -67,7 +67,7 @@ const OurApproach = () => {
             </div>
           </div>
           <div className="seventh-circle circle transit2 pa">
-            <div className="seventh-circlebox df zi1">
+            <div className="seventh-circlebox df zi99">
               <span className="circlebox df mr8 cp"></span>
               <p className="box-text fc1">Identify The Problem</p>
             </div>
@@ -83,7 +83,6 @@ const OurApproach = () => {
               </div>
             </div>
           </div>
-          {/* <img src="images/child-img.png" alt="child" className="child-img" /> */}
         </div>
       </div>
     </section>
