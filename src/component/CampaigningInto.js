@@ -81,7 +81,7 @@ const CampaigningInto = () => {
               animate={isVisible ? { opacity: 1, x: 0 } : {}}
               transition={{ duration: 1 }}
             >
-              We Live Here, We Give Here :<br />
+              We Live Here We Give Here :<br />
             </motion.span>
             Indo-American Charity Foundation Empowering Houston's Community
           </motion.h2>

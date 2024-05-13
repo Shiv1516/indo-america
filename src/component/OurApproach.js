@@ -52,13 +52,13 @@ const OurApproach = () => {
             </div>
           </div>
           <div className="fifth-circle circle transit2 pa">
-            <div className="fifth-circlebox df zi99">
+            <div className="fifth-circlebox df zi3">
               <span className="circlebox df mr8 cp"></span>
               <p className="box-text fc1">Create Awareness</p>
             </div>
           </div>
           <div className="sixth-circle circle transit2 pa">
-            <div className="sixth-circlebox df zi99">
+            <div className="sixth-circlebox df zi2">
               <span className="circlebox blink pr aft bef df mr8 cp"></span>
               <p className="box-text fc1">
                 Partner With
@@ -67,7 +67,7 @@ const OurApproach = () => {
             </div>
           </div>
           <div className="seventh-circle circle transit2 pa">
-            <div className="seventh-circlebox df zi99">
+            <div className="seventh-circlebox df zi1">
               <span className="circlebox df mr8 cp"></span>
               <p className="box-text fc1">Identify The Problem</p>
             </div>
